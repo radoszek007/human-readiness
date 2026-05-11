@@ -9,6 +9,7 @@ import FounderSection from "@/components/FounderSection";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import OrganizationOutcomes from "@/components/organization/OrganizationOutcomes";
+import ReadinessLayers from "@/components/organization/ReadinessLayers";
 import WhenResiliumMakesSense from "@/components/organization/WhenResiliumMakesSense";
 import ProblemSection from "@/components/ProblemSection";
 import ProcessSection from "@/components/ProcessSection";
@@ -29,6 +30,7 @@ export default function OrganizacePage() {
       <main>
         <Hero />
         <WhenResiliumMakesSense />
+        <ReadinessLayers />
         <ProblemSection />
         <WhatIsResiliumSection />
         <OrganizationOutcomes />

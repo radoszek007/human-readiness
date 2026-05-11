@@ -5,9 +5,46 @@ export default function DifferenceSection() {
     <section className="bg-bg py-20 text-white sm:py-24">
       <div className="section-shell">
         <div className="max-w-4xl">
-          <p className="eyebrow mb-4">Odlišení</p>
-          <h2 className="font-heading text-3xl font-black leading-tight sm:text-5xl">Rozdíl je v nácviku</h2>
+          <p className="eyebrow mb-4">Čím se Resilium liší</p>
+          <h2 className="font-heading text-3xl font-black leading-tight sm:text-5xl">
+            Mentální, komunikační a fyzická připravenost v jednom systému
+          </h2>
           <p className="mt-6 text-lg leading-8 text-text-primary/90">
+            Běžný stress management pracuje hlavně se stresem. Soft skills školení pracují hlavně s komunikací. Klasická
+            sebeobrana pracuje hlavně s fyzickým střetem. Resilium propojuje všechny tři roviny do praktického systému
+            reakce pod tlakem.
+          </p>
+        </div>
+
+        <div className="mt-10 grid gap-6 lg:grid-cols-[0.95fr_1.05fr]">
+          <div className="rounded-[1.25rem] border border-accent/30 bg-panel-dark/70 p-6 shadow-panel">
+            <p className="text-lg font-extrabold leading-8 text-white">
+              V tréninku proto neřešíme jen to, jak se člověk cítí nebo co by měl říct. Řešíme, co skutečně udělá,
+              když se situace zhorší.
+            </p>
+          </div>
+          <ul className="grid gap-3 sm:grid-cols-2">
+            {[
+              "stabilizovat tělo a dech",
+              "udržet orientaci",
+              "pracovat s hlasem",
+              "nastavit hranice",
+              "rozpoznat eskalaci",
+              "zachovat bezpečný odstup",
+              "ukončit rizikový kontakt",
+              "rozhodnout, kdy komunikovat, kdy odejít a kdy chránit sebe nebo druhé"
+            ].map((item) => (
+              <li key={item} className="flex gap-3 rounded-2xl border border-border/35 bg-panel-dark/58 px-4 py-3 leading-7 text-text-primary">
+                <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-accent" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="mt-12 max-w-4xl">
+          <h3 className="font-heading text-2xl font-black leading-tight text-white sm:text-3xl">Rozdíl je v nácviku</h3>
+          <p className="mt-4 text-lg leading-8 text-text-primary/90">
             Mnoho školení vysvětluje, co by lidé měli dělat. Resilium vytváří bezpečné podmínky, ve kterých si účastníci ověří,
             co skutečně dokážou použít.
           </p>

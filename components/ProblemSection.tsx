@@ -5,7 +5,7 @@ export default function ProblemSection() {
     <section id="problem" className="bg-section-light py-20 sm:py-24">
       <div className="section-shell">
         <div className="max-w-4xl">
-          <p className="eyebrow mb-4">Problém</p>
+          <p className="eyebrow mb-4">Tlak v praxi</p>
           <h2 className="font-heading text-3xl font-black leading-tight text-dark sm:text-5xl">
             Největší chyby často vznikají ve chvíli, kdy člověk ztratí přístup k tomu, co už ví
           </h2>

@@ -412,7 +412,7 @@ export default function PersonalPage() {
             <SectionHeading
               eyebrow="PILÍŘE TRÉNINKU"
               title="Tělo. Pozornost. Hranice. Akce."
-              text="Osobní varianta hlavní metodiky Resilium převádí osu tělo, pozornost, rozhodnutí, akce do běžných situací jednotlivce. Proto pracujeme s tělem, pozorností, hranicemi a konkrétním dalším krokem. Nejde o pasivní relaxaci. Účastník si postupy zkouší v řízených situacích, kde vzniká mírný tlak, nekomfort nebo konflikt."
+              text="Resilium Personal je osobní aplikace stejné metodiky: tělo, pozornost, rozhodnutí, akce. Tuto osu převádí do běžných situací jednotlivce. Proto pracujeme s tělem, pozorností, hranicemi a konkrétním dalším krokem. Nejde o pasivní relaxaci. Účastník si postupy zkouší v řízených situacích, kde vzniká mírný tlak, nekomfort nebo konflikt."
             />
             <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
               {pillars.map((pillar, index) => (

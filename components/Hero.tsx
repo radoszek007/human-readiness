@@ -20,12 +20,13 @@ export default function Hero() {
               Systém připravenosti pro tlak, konflikt a riziko
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-text-muted sm:text-xl">
-              Resilium učí lidi a týmy zachovat orientaci, rozhodnout se a jednat profesionálně v situacích,
-              kde roste stres, konflikt nebo bezpečnostní riziko.
+              Resilium učí lidi a týmy zachovat orientaci, nastavit hranice, komunikovat jasně a jednat profesionálně
+              ve chvílích, kdy roste psychický tlak, vzniká konflikt nebo se situace mění v bezpečnostní riziko.
             </p>
             <p className="mt-5 max-w-3xl text-base leading-7 text-text-primary/90">
-              Propojujeme psychofyzický trénink, krizovou komunikaci a praktické protokoly osobní bezpečnosti.
-              Účastníci netrénují teorii. Trénují reakci v řízených situacích, které se podobají reálnému tlaku.
+              Propojujeme psychofyzický trénink, rozhodovací protokoly, krizovou komunikaci a praktické principy osobní
+              bezpečnosti. Účastníci netrénují teorii. Trénují mentální, komunikační a fyzickou reakci v řízených situacích,
+              které se podobají reálnému tlaku.
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">

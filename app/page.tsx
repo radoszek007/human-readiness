@@ -90,8 +90,9 @@ export default function Home() {
               Když roste tlak, rozhoduje připravenost člověka.
             </h1>
             <p className="mt-6 max-w-4xl text-lg leading-8 text-text-muted sm:text-xl">
-              V náročných situacích lidé často neztrácejí znalosti, ale přístup k nim. Resilium trénuje schopnost zůstat funkční,
-              zachovat orientaci a zvolit další krok — v týmu, v konfliktu i v osobním tlaku.
+              V náročných situacích lidé často neztrácejí znalosti, ale přístup k nim. Resilium trénuje mentální, komunikační
+              a fyzickou připravenost člověka — schopnost zůstat funkční, zachovat orientaci a zvolit další krok v týmu,
+              v konfliktu i v osobním tlaku.
             </p>
             <p className="mt-4 max-w-3xl text-base leading-7 text-text-primary/88">
               Vyberte si, zda řešíte připravenost organizace, nebo vlastní osobní odolnost.
@@ -125,7 +126,8 @@ export default function Home() {
             <h2 className="font-heading text-3xl font-black leading-tight text-white sm:text-4xl">Jeden princip. Dvě použití.</h2>
             <p className="mt-5 max-w-4xl text-lg leading-8 text-text-muted">
               Resilium staví na jedné metodické ose: tělo, pozornost, rozhodnutí, akce. V organizacích ji převádíme do týmové
-              komunikace, rolí a krizových scénářů. U jednotlivců do práce se stresem, hranicemi a prvním krokem v náročné situaci.
+              komunikace, rolí, krizových scénářů a práce s rizikem. U jednotlivců do práce se stresem, hranicemi, prostorem
+              a prvním krokem v náročné situaci.
             </p>
           </section>
         </div>

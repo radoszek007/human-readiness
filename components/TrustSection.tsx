@@ -25,8 +25,13 @@ export default function TrustSection() {
             <p className="eyebrow mb-4">Důvěryhodnost</p>
             <h2 className="font-heading text-3xl font-black leading-tight sm:text-5xl">Odbornost postavená na praxi</h2>
             <p className="mt-6 text-lg leading-8 text-text-primary/90">
-              Resilium vychází z dlouholeté praxe v oblasti osobní bezpečnosti, krizové komunikace, sebeobrany,
-              psychofyzického tréninku a práce s lidmi pod tlakem.
+              Resilium vychází z dlouholeté praxe v oblasti osobní bezpečnosti, krizové komunikace, psychofyzického tréninku
+              a práce s lidmi pod tlakem.
+            </p>
+            <p className="mt-5 text-base leading-7 text-text-muted">
+              Resilium využívá vybrané principy osobní bezpečnosti a moderní sebeobrany jako metodický zdroj pro práci
+              s tělem, prostorem, hranicemi a bezpečnou reakcí. Nepředává je jako bojový výcvik pro firmy, ale jako
+              praktické principy profesionálního jednání v situacích, kde tlak přechází z komunikace do prostoru a těla.
             </p>
           </div>
 
