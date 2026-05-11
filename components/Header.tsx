@@ -14,7 +14,7 @@ export default function Header() {
         className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/20 bg-panel-dark/70 px-4 py-3 text-white shadow-panel backdrop-blur-xl lg:px-5"
         aria-label="Hlavní navigace"
       >
-        <Link href="/organizace" className="flex items-center gap-3" aria-label="Resilium pro organizace">
+        <Link href="/" className="flex items-center gap-3" aria-label="Resilium úvod">
           <Image
             src="/logo-cele.png"
             alt="Resilium"
@@ -25,7 +25,7 @@ export default function Header() {
           />
         </Link>
 
-        <div className="hidden items-center gap-1 xl:flex">
+        <div className="hidden items-center gap-1.5 xl:flex">
           <Link
             href="/"
             className="rounded-full px-3 py-2 text-sm font-semibold text-text-muted transition hover:bg-white/10 hover:text-white"
@@ -36,7 +36,7 @@ export default function Header() {
             href="/personal"
             className="rounded-full px-3 py-2 text-sm font-semibold text-text-muted transition hover:bg-white/10 hover:text-white"
           >
-            Resilium Personal
+            Personal
           </Link>
           {navItems.map((item) => (
             <a
@@ -87,7 +87,7 @@ export default function Header() {
               onClick={() => setIsOpen(false)}
               className="rounded-2xl px-4 py-3 text-sm font-semibold text-text-primary transition hover:bg-white/10"
             >
-              Resilium Personal
+              Personal
             </Link>
             {navItems.map((item) => (
               <a

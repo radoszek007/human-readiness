@@ -2,7 +2,7 @@ export const consultationMailto =
   "mailto:info@allprosys.cz?subject=Z%C3%A1jem%20o%20%C3%BAvodn%C3%AD%20konzultaci%20Resilium";
 
 export const navItems = [
-  { label: "Problém", href: "#problem" },
+  { label: "Kdy to řešit", href: "#problem" },
   { label: "Systém", href: "#system" },
   { label: "Programy", href: "#programs" },
   { label: "Pro koho", href: "#audience" },

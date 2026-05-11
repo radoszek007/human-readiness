@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
@@ -130,6 +131,13 @@ const trainingParams = [
   { label: "Výstup", value: "osobní postup pro první sekundy tlaku" }
 ];
 
+const trainingStatus = [
+  { label: "Termín", value: "připravujeme" },
+  { label: "Místo", value: "bude upřesněno" },
+  { label: "Cena", value: "bude upřesněna" },
+  { label: "Kapacita", value: "omezený počet míst" }
+];
+
 const included = [
   "práce s dechem, postojem a pozorností",
   "rozpoznání osobních spouštěčů stresu",
@@ -228,18 +236,22 @@ export default function PersonalPage() {
     <>
       <header className="fixed inset-x-0 top-0 z-50 px-4 pt-4 sm:px-6">
         <nav className="mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/20 bg-panel-dark/72 px-4 py-3 text-white shadow-panel backdrop-blur-xl lg:px-5">
-          <Link href="/personal" className="flex items-center gap-3" aria-label="Resilium Personal">
-            <span className="flex h-9 w-9 items-center justify-center rounded-full bg-accent text-sm font-black text-white">
-              R
-            </span>
-            <span className="font-heading text-sm font-black uppercase tracking-[0.16em] sm:text-base">Resilium Personal</span>
+          <Link href="/" className="flex items-center gap-3" aria-label="Resilium úvod">
+            <Image
+              src="/logo-cele.png"
+              alt="Resilium"
+              width={174}
+              height={44}
+              priority
+              className="h-9 w-auto object-contain sm:h-10"
+            />
           </Link>
-          <div className="hidden items-center gap-1 xl:flex">
+          <div className="hidden items-center gap-3 xl:flex">
             {navItems.map((item) => (
               <a
                 key={item.href}
                 href={item.href}
-                className="rounded-full px-3 py-2 text-sm font-semibold text-text-muted transition hover:bg-white/10 hover:text-white"
+                className="whitespace-nowrap rounded-full px-3 py-2 text-sm font-semibold text-text-muted transition hover:bg-white/10 hover:text-white"
               >
                 {item.label}
               </a>
@@ -257,13 +269,13 @@ export default function PersonalPage() {
             </a>
           </div>
         </nav>
-        <div className="mx-auto mt-3 flex max-w-7xl gap-2 overflow-x-auto rounded-full border border-white/15 bg-panel-dark/62 p-2 text-white shadow-panel backdrop-blur-xl xl:hidden">
+        <div className="mx-auto mt-3 flex max-w-7xl gap-3 overflow-x-auto rounded-full border border-white/15 bg-panel-dark/62 p-2 text-white shadow-panel backdrop-blur-xl xl:hidden">
           {navItems.map((item) => (
-            <a key={item.href} href={item.href} className="shrink-0 rounded-full px-3 py-2 text-xs font-bold text-text-primary">
+            <a key={item.href} href={item.href} className="shrink-0 whitespace-nowrap rounded-full px-3 py-2 text-xs font-bold text-text-primary">
               {item.label}
             </a>
           ))}
-          <Link href="/organizace" className="shrink-0 rounded-full px-3 py-2 text-xs font-bold text-accent-soft sm:hidden">
+          <Link href="/organizace" className="shrink-0 whitespace-nowrap rounded-full px-3 py-2 text-xs font-bold text-accent-soft sm:hidden">
             Pro organizace
           </Link>
         </div>
@@ -314,7 +326,7 @@ export default function PersonalPage() {
                 </div>
                 <div className="mt-5 rounded-2xl border border-border/40 bg-dark/20 p-5">
                   <div className="grid grid-cols-2 gap-3 text-sm font-black uppercase tracking-[0.14em] text-text-primary">
-                    {["Tělo.", "Pozornost.", "Rozhodnutí.", "Akce."].map((word) => (
+                    {["Tělo", "Pozornost", "Rozhodnutí", "Akce"].map((word) => (
                       <span key={word} className="rounded-xl bg-white/10 px-3 py-3 text-center">
                         {word}
                       </span>
@@ -533,7 +545,7 @@ export default function PersonalPage() {
                 <details key={faq.question} className="group rounded-[1.25rem] border border-slate-200 bg-white p-5 shadow-soft">
                   <summary className="flex cursor-pointer list-none items-center justify-between gap-5 font-heading text-lg font-extrabold text-dark">
                     <span>{faq.question}</span>
-                    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-bg text-xl leading-none text-white transition group-open:rotate-45">
+                    <span aria-hidden="true" className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-bg text-xl leading-none text-white transition group-open:rotate-45">
                       +
                     </span>
                   </summary>
@@ -554,12 +566,28 @@ export default function PersonalPage() {
               <p className="mt-5 max-w-3xl text-lg leading-8 text-text-muted">
                 Zařaďte se na seznam zájemců. Jakmile otevřeme nejbližší termín, pošleme vám místo, cenu a přesný průběh tréninku.
               </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+
+              <div className="mt-8 rounded-[1.25rem] border border-border/40 bg-bg/28 p-5">
+                <h3 className="font-heading text-xl font-black text-white">Aktuální stav nejbližšího tréninku</h3>
+                <dl className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+                  {trainingStatus.map((item) => (
+                    <div key={item.label} className="rounded-2xl border border-border/35 bg-panel-dark/52 p-4">
+                      <dt className="text-xs font-black uppercase tracking-[0.16em] text-accent-soft">{item.label}</dt>
+                      <dd className="mt-2 font-extrabold text-text-primary">{item.value}</dd>
+                    </div>
+                  ))}
+                </dl>
+              </div>
+
+              <div className="mt-8">
                 <MailCTA>Chci vědět nejbližší termín</MailCTA>
-                <a href="mailto:info@allprosys.cz" className="text-sm font-extrabold text-accent-soft">
+              </div>
+              <p className="mt-4 text-sm leading-6 text-text-muted">
+                Kontakt:{" "}
+                <a href="mailto:info@allprosys.cz" className="font-extrabold text-accent-soft">
                   info@allprosys.cz
                 </a>
-              </div>
+              </p>
               <p className="mt-5 max-w-3xl text-sm leading-6 text-text-muted">
                 Počet míst bude omezený, aby měl každý účastník prostor pro praktický nácvik a zpětnou vazbu.
               </p>

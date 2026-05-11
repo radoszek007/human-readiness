@@ -14,7 +14,7 @@ export default function FAQSection() {
             <details key={faq.question} className="group rounded-[1.25rem] border border-slate-200 bg-white p-5 shadow-soft">
               <summary className="flex cursor-pointer list-none items-center justify-between gap-5 font-heading text-lg font-extrabold text-dark">
                 <span>{faq.question}</span>
-                <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-bg text-xl leading-none text-white transition group-open:rotate-45">
+                <span aria-hidden="true" className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-bg text-xl leading-none text-white transition group-open:rotate-45">
                   +
                 </span>
               </summary>

@@ -6,7 +6,9 @@ const paths = [
   {
     title: "Resilium pro organizace",
     subtitle: "Tlak, konflikt a riziko v pracovním prostředí",
-    text: "Pomáháme týmům snížit chaos v náročných situacích a udržet profesionální reakci tam, kde tlak obvykle rozbíjí komunikaci.",
+    text: "Pro firmy, školy, úřady a týmy, které potřebují zvládat tlak, konfliktní situace a krizovou komunikaci v reálném pracovním prostředí.",
+    result:
+      "Výsledkem je společný postup, jasnější komunikace a menší chaos ve chvílích, kdy tlak obvykle rozbíjí rozhodování.",
     points: [
       "týmová připravenost",
       "krizová komunikace",
@@ -14,13 +16,15 @@ const paths = [
       "leadership pod tlakem",
       "scénáře podle reality organizace"
     ],
-    cta: "Vstoupit do části pro organizace",
+    cta: "Řeším připravenost organizace",
     href: "/organizace"
   },
   {
     title: "Resilium Personal",
     subtitle: "Osobní odolnost a jistota v náročných situacích",
     text: "Pro jednotlivce, kteří chtějí v tlaku méně zamrzat, lépe nastavit hranice a získat konkrétní postup pro náročné situace.",
+    result:
+      "Výsledkem je větší jistota v prvních sekundách tlaku: méně zamrznutí, jasnější hranice a konkrétní další krok.",
     points: [
       "regulace stresové reakce",
       "práce s tělem a pozorností",
@@ -28,7 +32,7 @@ const paths = [
       "jistota v konfliktu",
       "veřejné tréninky"
     ],
-    cta: "Vstoupit do části pro jednotlivce",
+    cta: "Chci trénovat osobní odolnost",
     href: "/personal"
   }
 ];
@@ -86,8 +90,11 @@ export default function Home() {
               Když roste tlak, rozhoduje připravenost člověka.
             </h1>
             <p className="mt-6 max-w-4xl text-lg leading-8 text-text-muted sm:text-xl">
-              Resilium propojuje psychofyzický trénink, krizovou komunikaci a praktické protokoly osobní bezpečnosti.
-              Vyberte si cestu podle toho, zda řešíte připravenost organizace, nebo vlastní osobní odolnost.
+              V náročných situacích lidé často neztrácejí znalosti, ale přístup k nim. Resilium trénuje schopnost zůstat funkční,
+              zachovat orientaci a zvolit další krok — v týmu, v konfliktu i v osobním tlaku.
+            </p>
+            <p className="mt-4 max-w-3xl text-base leading-7 text-text-primary/88">
+              Vyberte si, zda řešíte připravenost organizace, nebo vlastní osobní odolnost.
             </p>
           </div>
 
@@ -97,6 +104,7 @@ export default function Home() {
                 <p className="text-sm font-black uppercase tracking-[0.18em] text-accent-soft">{path.subtitle}</p>
                 <h2 className="mt-4 font-heading text-3xl font-black leading-tight text-white sm:text-4xl">{path.title}</h2>
                 <p className="mt-5 text-lg leading-8 text-text-muted">{path.text}</p>
+                <p className="mt-4 leading-7 text-text-primary">{path.result}</p>
                 <ul className="mt-7 grid gap-3">
                   {path.points.map((point) => (
                     <li key={point} className="flex gap-3 leading-7 text-text-primary">
@@ -116,8 +124,8 @@ export default function Home() {
             <p className="eyebrow mb-4">Společný základ</p>
             <h2 className="font-heading text-3xl font-black leading-tight text-white sm:text-4xl">Jeden princip. Dvě použití.</h2>
             <p className="mt-5 max-w-4xl text-lg leading-8 text-text-muted">
-              Resilium staví na stejné metodice: tělo, pozornost, rozhodnutí, akce. Pro organizace ji převádíme do týmů,
-              procesů a krizových scénářů. Pro jednotlivce do osobní odolnosti, jistoty a schopnosti jednat v náročných situacích.
+              Resilium staví na jedné metodické ose: tělo, pozornost, rozhodnutí, akce. V organizacích ji převádíme do týmové
+              komunikace, rolí a krizových scénářů. U jednotlivců do práce se stresem, hranicemi a prvním krokem v náročné situaci.
             </p>
           </section>
         </div>
