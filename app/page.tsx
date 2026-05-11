@@ -141,10 +141,10 @@ export default function Home() {
             <div>
               <p className="text-sm font-black uppercase tracking-[0.16em] text-text-secondary">Kontakt</p>
               <p className="mt-3 font-semibold">
-                <a href="mailto:info@allprosys.cz">info@allprosys.cz</a>
+                <a href="mailto:info@resilium.cz">info@resilium.cz</a>
               </p>
               <p className="mt-2 font-semibold">
-                <a href="https://www.allprosys.cz">www.allprosys.cz</a>
+                <a href="https://www.resilium.cz">www.resilium.cz</a>
               </p>
             </div>
             <div>

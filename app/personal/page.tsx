@@ -610,13 +610,16 @@ export default function PersonalPage() {
               <div className="mt-3 grid gap-2 font-semibold">
                 <Link href="/organizace">Pro organizace</Link>
                 <Link href="/">Úvod</Link>
-                <a href="mailto:info@allprosys.cz">Kontakt</a>
+                <a href="mailto:info@resilium.cz">Kontakt</a>
               </div>
             </div>
             <div>
               <p className="text-sm font-black uppercase tracking-[0.16em] text-text-secondary">Kontakt</p>
               <p className="mt-3 font-semibold">
-                <a href="mailto:info@allprosys.cz">info@allprosys.cz</a>
+                <a href="mailto:info@resilium.cz">info@resilium.cz</a>
+              </p>
+              <p className="mt-2 font-semibold">
+                <a href="https://www.resilium.cz">www.resilium.cz</a>
               </p>
               <p className="mt-5 text-sm font-black uppercase tracking-[0.16em] text-text-secondary">Firma</p>
               <p className="mt-3 font-semibold">Allprosys.cz s.r.o.</p>
