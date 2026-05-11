@@ -6,7 +6,7 @@ const paths = [
   {
     title: "Resilium pro organizace",
     subtitle: "Tlak, konflikt a riziko v pracovním prostředí",
-    text: "Pro firmy, školy, úřady, zdravotnictví a týmy, které potřebují zvládat tlak, konfliktní situace, krizovou komunikaci a osobní bezpečnost v reálném pracovním prostředí.",
+    text: "Pomáháme týmům snížit chaos v náročných situacích a udržet profesionální reakci tam, kde tlak obvykle rozbíjí komunikaci.",
     points: [
       "týmová připravenost",
       "krizová komunikace",
@@ -20,7 +20,7 @@ const paths = [
   {
     title: "Resilium Personal",
     subtitle: "Osobní odolnost a jistota v náročných situacích",
-    text: "Pro jednotlivce, kteří chtějí lépe rozumět své stresové reakci, získat větší vnitřní stabilitu a prakticky trénovat reakce v náročných, nekomfortních nebo konfliktních situacích.",
+    text: "Pro jednotlivce, kteří chtějí v tlaku méně zamrzat, lépe nastavit hranice a získat konkrétní postup pro náročné situace.",
     points: [
       "regulace stresové reakce",
       "práce s tělem a pozorností",
@@ -83,7 +83,7 @@ export default function Home() {
           <div className="max-w-5xl">
             <p className="eyebrow mb-5">SYSTÉM PŘIPRAVENOSTI</p>
             <h1 className="font-heading text-4xl font-black leading-[1.04] text-white sm:text-6xl lg:text-7xl">
-              Připravenost člověka rozhoduje ve chvíli, kdy roste tlak.
+              Když roste tlak, rozhoduje připravenost člověka.
             </h1>
             <p className="mt-6 max-w-4xl text-lg leading-8 text-text-muted sm:text-xl">
               Resilium propojuje psychofyzický trénink, krizovou komunikaci a praktické protokoly osobní bezpečnosti.

@@ -8,6 +8,8 @@ import Footer from "@/components/Footer";
 import FounderSection from "@/components/FounderSection";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
+import OrganizationOutcomes from "@/components/organization/OrganizationOutcomes";
+import WhenResiliumMakesSense from "@/components/organization/WhenResiliumMakesSense";
 import ProblemSection from "@/components/ProblemSection";
 import ProcessSection from "@/components/ProcessSection";
 import ProgramsSection from "@/components/ProgramsSection";
@@ -26,8 +28,10 @@ export default function OrganizacePage() {
       <Header />
       <main>
         <Hero />
+        <WhenResiliumMakesSense />
         <ProblemSection />
         <WhatIsResiliumSection />
+        <OrganizationOutcomes />
         <CoreMethodSection />
         <DifferenceSection />
         <ProgramsSection />

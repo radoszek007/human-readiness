@@ -23,7 +23,7 @@ export default function FounderSection() {
           </div>
 
           <div>
-            <p className="eyebrow mb-4">Zakladatelský blok</p>
+            <p className="eyebrow mb-4">Odborné vedení</p>
             <h2 className="font-heading text-3xl font-black leading-tight text-dark sm:text-5xl">
               Za systémem Resilium stojí praxe z osobní bezpečnosti, komunikace a výcviku pod tlakem
             </h2>

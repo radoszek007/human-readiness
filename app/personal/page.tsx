@@ -314,7 +314,7 @@ export default function PersonalPage() {
                 </div>
                 <div className="mt-5 rounded-2xl border border-border/40 bg-dark/20 p-5">
                   <div className="grid grid-cols-2 gap-3 text-sm font-black uppercase tracking-[0.14em] text-text-primary">
-                    {["Tělo.", "Pozornost.", "Hranice.", "Akce."].map((word) => (
+                    {["Tělo.", "Pozornost.", "Rozhodnutí.", "Akce."].map((word) => (
                       <span key={word} className="rounded-xl bg-white/10 px-3 py-3 text-center">
                         {word}
                       </span>
@@ -400,7 +400,7 @@ export default function PersonalPage() {
             <SectionHeading
               eyebrow="PILÍŘE TRÉNINKU"
               title="Tělo. Pozornost. Hranice. Akce."
-              text="Metodika staví na propojení těla, nervového systému, pozornosti a rozhodování. Nejde o pasivní relaxaci. Účastník si postupy zkouší v řízených situacích, kde vzniká mírný tlak, nekomfort nebo konflikt."
+              text="Osobní varianta hlavní metodiky Resilium převádí osu tělo, pozornost, rozhodnutí, akce do běžných situací jednotlivce. Proto pracujeme s tělem, pozorností, hranicemi a konkrétním dalším krokem. Nejde o pasivní relaxaci. Účastník si postupy zkouší v řízených situacích, kde vzniká mírný tlak, nekomfort nebo konflikt."
             />
             <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
               {pillars.map((pillar, index) => (
@@ -552,11 +552,10 @@ export default function PersonalPage() {
                 Chcete vědět o nejbližším termínu?
               </h2>
               <p className="mt-5 max-w-3xl text-lg leading-8 text-text-muted">
-                Pošleme vám informace k nejbližšímu tréninku Resilium Personal: termín, místo, cenu a přesný průběh.
-                Bez závazku.
+                Zařaďte se na seznam zájemců. Jakmile otevřeme nejbližší termín, pošleme vám místo, cenu a přesný průběh tréninku.
               </p>
               <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
-                <MailCTA>Chci informace o tréninku</MailCTA>
+                <MailCTA>Chci vědět nejbližší termín</MailCTA>
                 <a href="mailto:info@allprosys.cz" className="text-sm font-extrabold text-accent-soft">
                   info@allprosys.cz
                 </a>
