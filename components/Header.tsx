@@ -25,31 +25,31 @@ export default function Header() {
           />
         </Link>
 
-        <div className="hidden items-center gap-1.5 xl:flex">
+        <div className="hidden items-center gap-2 xl:flex">
           <Link
             href="/"
-            className="rounded-full px-3 py-2 text-sm font-semibold text-text-muted transition hover:bg-white/10 hover:text-white"
+            className="whitespace-nowrap rounded-full px-3 py-2 text-sm font-semibold text-text-muted transition hover:bg-white/10 hover:text-white"
           >
             Úvod
           </Link>
           <Link
             href="/personal"
-            className="rounded-full px-3 py-2 text-sm font-semibold text-text-muted transition hover:bg-white/10 hover:text-white"
+            className="whitespace-nowrap rounded-full px-3 py-2 text-sm font-semibold text-text-muted transition hover:bg-white/10 hover:text-white"
           >
-            Personal
+            Personal Performance
           </Link>
           {navItems.map((item) => (
             <a
               key={item.href}
               href={item.href}
-              className="rounded-full px-3 py-2 text-sm font-semibold text-text-muted transition hover:bg-white/10 hover:text-white"
+              className="whitespace-nowrap rounded-full px-3 py-2 text-sm font-semibold text-text-muted transition hover:bg-white/10 hover:text-white"
             >
               {item.label}
             </a>
           ))}
         </div>
 
-        <a href={consultationMailto} className="hidden rounded-full bg-accent px-4 py-2.5 text-sm font-extrabold text-white transition hover:bg-accent-warm xl:inline-flex">
+        <a href={consultationMailto} className="hidden rounded-full bg-accent px-4 py-2.5 text-sm font-bold text-white transition hover:bg-accent-warm xl:inline-flex">
           Ověřit připravenost
         </a>
 
@@ -87,7 +87,7 @@ export default function Header() {
               onClick={() => setIsOpen(false)}
               className="rounded-2xl px-4 py-3 text-sm font-semibold text-text-primary transition hover:bg-white/10"
             >
-              Personal
+              Personal Performance
             </Link>
             {navItems.map((item) => (
               <a
@@ -101,7 +101,7 @@ export default function Header() {
             ))}
             <a
               href={consultationMailto}
-              className="mt-2 rounded-2xl bg-accent px-4 py-3 text-center text-sm font-extrabold text-white"
+              className="mt-2 rounded-2xl bg-accent px-4 py-3 text-center text-sm font-bold text-white"
               onClick={() => setIsOpen(false)}
             >
               Ověřit připravenost

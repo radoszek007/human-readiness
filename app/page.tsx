@@ -20,7 +20,7 @@ const paths = [
     href: "/organizace"
   },
   {
-    title: "Resilium Personal",
+    title: "Resilium Personal Performance",
     subtitle: "Osobní odolnost a jistota v náročných situacích",
     text: "Pro jednotlivce, kteří chtějí v tlaku méně zamrzat, lépe nastavit hranice a získat konkrétní postup pro náročné situace.",
     result:
@@ -58,35 +58,35 @@ export default function Home() {
               Pro organizace
             </Link>
             <Link href="/personal" className="rounded-full px-4 py-2 text-sm font-semibold text-text-muted transition hover:bg-white/10 hover:text-white">
-              Personal
+              Personal Performance
             </Link>
-            <a href="mailto:info@allprosys.cz" className="rounded-full bg-accent px-4 py-2.5 text-sm font-extrabold text-white transition hover:bg-accent-warm">
+            <a href="mailto:info@allprosys.cz" className="rounded-full bg-accent px-4 py-2.5 text-sm font-bold text-white transition hover:bg-accent-warm">
               Kontakt
             </a>
           </div>
-          <a href="mailto:info@allprosys.cz" className="rounded-full bg-accent px-4 py-2.5 text-sm font-extrabold text-white transition hover:bg-accent-warm md:hidden">
+          <a href="mailto:info@allprosys.cz" className="rounded-full bg-accent px-4 py-2.5 text-sm font-bold text-white transition hover:bg-accent-warm md:hidden">
             Kontakt
           </a>
         </nav>
         <div className="relative mx-auto mt-3 grid max-w-7xl grid-cols-2 gap-2 md:hidden">
-          <Link href="/organizace" className="rounded-full border border-white/16 bg-panel-dark/58 px-4 py-3 text-center text-sm font-extrabold text-text-primary backdrop-blur">
+          <Link href="/organizace" className="rounded-full border border-white/16 bg-panel-dark/58 px-4 py-3 text-center text-sm font-bold text-text-primary backdrop-blur">
             Pro organizace
           </Link>
-          <Link href="/personal" className="rounded-full border border-white/16 bg-panel-dark/58 px-4 py-3 text-center text-sm font-extrabold text-text-primary backdrop-blur">
-            Personal
+          <Link href="/personal" className="rounded-full border border-white/16 bg-panel-dark/58 px-4 py-3 text-center text-sm font-bold text-text-primary backdrop-blur">
+            Personal Performance
           </Link>
         </div>
 
         <div className="section-shell relative py-16 sm:py-20 lg:py-24">
           <div className="mb-10 overflow-hidden">
-            <div className="font-heading text-[18vw] font-black uppercase leading-none tracking-[0.08em] text-white sm:text-[16vw] lg:text-[11.2rem]">
+            <div className="font-heading text-[18vw] font-bold uppercase leading-none tracking-[0.08em] text-white sm:text-[16vw] lg:text-[11.2rem]">
               RESILIUM
             </div>
           </div>
 
           <div className="max-w-5xl">
             <p className="eyebrow mb-5">SYSTÉM PŘIPRAVENOSTI</p>
-            <h1 className="font-heading text-4xl font-black leading-[1.04] text-white sm:text-6xl lg:text-7xl">
+            <h1 className="font-heading text-4xl font-bold leading-[1.04] text-white sm:text-6xl lg:text-7xl">
               Když roste tlak, rozhoduje připravenost člověka.
             </h1>
             <p className="mt-6 max-w-4xl text-lg leading-8 text-text-muted sm:text-xl">
@@ -102,8 +102,8 @@ export default function Home() {
           <div className="mt-12 grid gap-5 lg:grid-cols-2">
             {paths.map((path) => (
               <article key={path.href} className="dark-card flex flex-col p-6 sm:p-8">
-                <p className="text-sm font-black uppercase tracking-[0.18em] text-accent-soft">{path.subtitle}</p>
-                <h2 className="mt-4 font-heading text-3xl font-black leading-tight text-white sm:text-4xl">{path.title}</h2>
+                <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent-soft">{path.subtitle}</p>
+                <h2 className="mt-4 font-heading text-3xl font-bold leading-tight text-white sm:text-4xl">{path.title}</h2>
                 <p className="mt-5 text-lg leading-8 text-text-muted">{path.text}</p>
                 <p className="mt-4 leading-7 text-text-primary">{path.result}</p>
                 <ul className="mt-7 grid gap-3">
@@ -123,7 +123,7 @@ export default function Home() {
 
           <section className="mt-12 rounded-[1.75rem] border border-border/40 bg-panel-dark/78 p-7 shadow-panel backdrop-blur sm:p-10">
             <p className="eyebrow mb-4">Společný základ</p>
-            <h2 className="font-heading text-3xl font-black leading-tight text-white sm:text-4xl">Jeden princip. Dvě použití.</h2>
+            <h2 className="font-heading text-3xl font-bold leading-tight text-white sm:text-4xl">Jeden princip. Dvě použití.</h2>
             <p className="mt-5 max-w-4xl text-lg leading-8 text-text-muted">
               Resilium staví na jedné metodické ose: tělo, pozornost, rozhodnutí, akce. V organizacích ji převádíme do týmové
               komunikace, rolí, krizových scénářů a práce s rizikem. U jednotlivců do práce se stresem, hranicemi, prostorem
@@ -141,7 +141,7 @@ export default function Home() {
               <p className="mt-3 max-w-sm leading-7 text-text-muted">Systém připravenosti pro tlak, konflikt a riziko.</p>
             </div>
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.16em] text-text-secondary">Kontakt</p>
+              <p className="text-sm font-bold uppercase tracking-[0.16em] text-text-secondary">Kontakt</p>
               <p className="mt-3 font-semibold">
                 <a href="mailto:info@resilium.cz">info@resilium.cz</a>
               </p>
@@ -150,7 +150,7 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.16em] text-text-secondary">Firma</p>
+              <p className="text-sm font-bold uppercase tracking-[0.16em] text-text-secondary">Firma</p>
               <p className="mt-3 font-semibold">Allprosys.cz s.r.o.</p>
             </div>
           </div>

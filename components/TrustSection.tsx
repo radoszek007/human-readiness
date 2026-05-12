@@ -23,7 +23,7 @@ export default function TrustSection() {
         <div className="relative grid gap-10 lg:grid-cols-[0.92fr_1.08fr]">
           <div>
             <p className="eyebrow mb-4">Důvěryhodnost</p>
-            <h2 className="font-heading text-3xl font-black leading-tight sm:text-5xl">Odbornost postavená na praxi</h2>
+            <h2 className="font-heading text-3xl font-bold leading-tight sm:text-5xl">Odbornost postavená na praxi</h2>
             <p className="mt-6 text-lg leading-8 text-text-primary/90">
               Resilium vychází z dlouholeté praxe v oblasti osobní bezpečnosti, krizové komunikace, psychofyzického tréninku
               a práce s lidmi pod tlakem.
@@ -51,7 +51,7 @@ export default function TrustSection() {
           <div className="grid lg:grid-cols-[1.05fr_0.95fr]">
             <article className="p-7 sm:p-8 lg:p-10">
               <p className="eyebrow mb-4">Princip tréninku</p>
-              <h3 className="max-w-3xl font-heading text-2xl font-black leading-tight sm:text-3xl">
+              <h3 className="max-w-3xl font-heading text-2xl font-bold leading-tight sm:text-3xl">
                 Bezpečně vytvořený tlak. Okamžitá zpětná vazba. Přenos do praxe.
               </h3>
               <p className="mt-5 max-w-3xl text-lg leading-8 text-text-muted">
@@ -65,10 +65,10 @@ export default function TrustSection() {
                 {practicePrinciples.map((principle, index) => (
                   <div key={principle.label} className="rounded-[1.25rem] border border-border/35 bg-bg/28 p-5">
                     <div className="flex items-center gap-3">
-                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-black text-white">
+                      <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">
                         {String(index + 1).padStart(2, "0")}
                       </span>
-                      <h4 className="font-heading text-lg font-extrabold text-white">{principle.label}</h4>
+                      <h4 className="font-body text-lg font-bold text-white">{principle.label}</h4>
                     </div>
                     <p className="mt-3 leading-7 text-text-muted">{principle.text}</p>
                   </div>

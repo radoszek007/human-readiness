@@ -8,7 +8,7 @@ export default function FinalCTA() {
           <div className="grid gap-10 lg:grid-cols-[1.12fr_0.88fr] lg:items-end">
             <div>
               <p className="eyebrow mb-4">Kontakt</p>
-              <h2 className="font-heading text-3xl font-black leading-tight sm:text-5xl">
+              <h2 className="font-heading text-3xl font-bold leading-tight sm:text-5xl">
                 Zjistěte, jak je váš tým připravený na tlak, konflikt a riziko
               </h2>
               <p className="mt-6 text-lg leading-8 text-text-muted">
@@ -28,17 +28,17 @@ export default function FinalCTA() {
             </div>
 
             <div className="rounded-[1.25rem] border border-border/40 bg-bg/40 p-6">
-              <p className="text-sm font-black uppercase tracking-[0.18em] text-accent-soft">Kontaktní údaje</p>
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent-soft">Kontaktní údaje</p>
               <dl className="mt-6 grid gap-5">
                 <div>
                   <dt className="text-sm text-text-muted">E-mail</dt>
-                  <dd className="mt-1 text-lg font-extrabold">
+                  <dd className="mt-1 text-lg font-bold">
                     <a href="mailto:info@allprosys.cz">info@allprosys.cz</a>
                   </dd>
                 </div>
                 <div>
                   <dt className="text-sm text-text-muted">Web</dt>
-                  <dd className="mt-1 text-lg font-extrabold">
+                  <dd className="mt-1 text-lg font-bold">
                     <a href="https://www.allprosys.cz">www.allprosys.cz</a>
                   </dd>
                 </div>

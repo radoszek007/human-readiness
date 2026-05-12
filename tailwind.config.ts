@@ -24,8 +24,10 @@ const config: Config = {
         border: "#728799"
       },
       fontFamily: {
-        heading: ["Montserrat", "Inter Tight", "system-ui", "sans-serif"],
-        body: ["Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "sans-serif"]
+        montserrat: ["var(--font-montserrat)", "Montserrat", "system-ui", "sans-serif"],
+        sans: ["var(--font-montserrat)", "Montserrat", "system-ui", "sans-serif"],
+        heading: ["var(--font-montserrat)", "Montserrat", "system-ui", "sans-serif"],
+        body: ["var(--font-montserrat)", "Montserrat", "system-ui", "sans-serif"]
       },
       boxShadow: {
         soft: "0 24px 70px rgba(37, 46, 53, 0.16)",

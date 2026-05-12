@@ -20,7 +20,7 @@ export default function ReadinessLayers() {
         <div className="rounded-[1.5rem] border border-slate-200 bg-white/82 p-6 shadow-soft sm:p-8 lg:p-10">
           <div className="max-w-4xl">
             <p className="eyebrow mb-4">Tři vrstvy připravenosti</p>
-            <h2 className="font-heading text-3xl font-black leading-tight text-dark sm:text-4xl">
+            <h2 className="font-heading text-3xl font-bold leading-tight text-dark sm:text-4xl">
               Tlak se neodehrává jen v hlavě
             </h2>
             <p className="mt-5 text-lg leading-8 text-slate-700">
@@ -32,10 +32,10 @@ export default function ReadinessLayers() {
           <div className="mt-8 grid gap-5 lg:grid-cols-3">
             {layers.map((layer, index) => (
               <article key={layer.title} className="light-card flex h-full flex-col p-6">
-                <span className="mb-6 flex h-10 w-10 items-center justify-center rounded-full bg-accent text-sm font-black text-white">
+                <span className="mb-6 flex h-10 w-10 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <h3 className="font-heading text-2xl font-extrabold leading-tight text-dark">{layer.title}</h3>
+                <h3 className="font-heading text-2xl font-bold leading-tight text-dark">{layer.title}</h3>
                 <p className="mt-4 leading-7 text-slate-700">{layer.text}</p>
               </article>
             ))}

@@ -16,7 +16,7 @@ export default function Footer() {
             <p className="mt-3 max-w-sm leading-7 text-text-muted">Systém připravenosti pro tlak, konflikt a riziko.</p>
           </div>
           <div>
-            <p className="text-sm font-black uppercase tracking-[0.16em] text-text-secondary">Kontakt</p>
+            <p className="text-sm font-bold uppercase tracking-[0.16em] text-text-secondary">Kontakt</p>
             <p className="mt-3 font-semibold">
               <a href="mailto:info@resilium.cz">info@resilium.cz</a>
             </p>
@@ -25,7 +25,7 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <p className="text-sm font-black uppercase tracking-[0.16em] text-text-secondary">Firma</p>
+            <p className="text-sm font-bold uppercase tracking-[0.16em] text-text-secondary">Firma</p>
             <p className="mt-3 font-semibold">Allprosys.cz s.r.o.</p>
             <p className="mt-6 text-sm leading-6 text-text-muted">© Resilium / Allprosys.cz s.r.o. Všechna práva vyhrazena.</p>
           </div>

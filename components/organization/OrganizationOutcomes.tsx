@@ -13,15 +13,15 @@ export default function OrganizationOutcomes() {
         <div className="grid gap-8 lg:grid-cols-[0.82fr_1.18fr] lg:items-start">
           <div>
             <p className="eyebrow mb-4">Co organizace získá</p>
-            <h2 className="font-heading text-3xl font-black leading-tight text-dark sm:text-4xl">
+            <h2 className="font-heading text-3xl font-bold leading-tight text-dark sm:text-4xl">
               Sdílený postup, který lidé dokážou použít v zátěži
             </h2>
           </div>
           <div className="grid gap-4 sm:grid-cols-2">
             {outcomes.map((outcome, index) => (
               <article key={outcome} className={`light-card p-5 ${index === 4 ? "sm:col-span-2" : ""}`}>
-                <span className="text-sm font-black text-accent">{String(index + 1).padStart(2, "0")}</span>
-                <p className="mt-3 text-lg font-extrabold leading-7 text-dark">{outcome}</p>
+                <span className="text-sm font-bold text-accent">{String(index + 1).padStart(2, "0")}</span>
+                <p className="mt-3 text-lg font-bold leading-7 text-dark">{outcome}</p>
               </article>
             ))}
           </div>

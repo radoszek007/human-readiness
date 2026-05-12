@@ -1,15 +1,10 @@
 import type { Metadata } from "next";
-import { Inter, Montserrat } from "next/font/google";
+import { Montserrat } from "next/font/google";
 import "./globals.css";
-
-const inter = Inter({
-  subsets: ["latin-ext"],
-  variable: "--font-inter",
-  display: "swap"
-});
 
 const montserrat = Montserrat({
   subsets: ["latin-ext"],
+  weight: ["400", "500", "600", "700", "800"],
   variable: "--font-montserrat",
   display: "swap"
 });
@@ -33,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="cs" className={`${inter.variable} ${montserrat.variable} scroll-smooth`}>
+    <html lang="cs" className={`${montserrat.variable} scroll-smooth`}>
       <body>{children}</body>
     </html>
   );

@@ -6,7 +6,7 @@ export default function ProblemSection() {
       <div className="section-shell">
         <div className="max-w-4xl">
           <p className="eyebrow mb-4">Tlak v praxi</p>
-          <h2 className="font-heading text-3xl font-black leading-tight text-dark sm:text-5xl">
+          <h2 className="font-heading text-3xl font-bold leading-tight text-dark sm:text-5xl">
             Největší chyby často vznikají ve chvíli, kdy člověk ztratí přístup k tomu, co už ví
           </h2>
           <p className="mt-6 text-lg leading-8 text-slate-700">
@@ -22,7 +22,7 @@ export default function ProblemSection() {
           {problemCards.map((card) => (
             <article key={card.title} className="light-card p-6 transition hover:-translate-y-1">
               <div className="mb-6 h-1.5 w-14 rounded-full bg-accent" />
-              <h3 className="font-heading text-2xl font-extrabold text-dark">{card.title}</h3>
+              <h3 className="font-heading text-2xl font-bold text-dark">{card.title}</h3>
               <p className="mt-4 leading-7 text-slate-700">{card.text}</p>
             </article>
           ))}

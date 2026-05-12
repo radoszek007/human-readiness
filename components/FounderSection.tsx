@@ -17,8 +17,8 @@ export default function FounderSection() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-dark/70 via-dark/8 to-transparent" />
             <div className="absolute inset-x-5 bottom-5 rounded-[1.25rem] border border-white/20 bg-panel-dark/78 p-5 text-white backdrop-blur sm:inset-x-8 sm:bottom-8">
-              <p className="text-sm font-black uppercase tracking-[0.18em] text-accent-soft">Mgr. Radim Končítek</p>
-              <p className="mt-2 text-base font-extrabold leading-6 text-white">autor metodiky a hlavní lektor systému</p>
+              <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent-soft">Mgr. Radim Končítek</p>
+              <p className="mt-2 text-base font-bold leading-6 text-white">autor metodiky a hlavní lektor systému</p>
             </div>
           </div>
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-const personalMailto = "mailto:info@allprosys.cz?subject=Z%C3%A1jem%20o%20Resilium%20Personal";
+const personalMailto = "mailto:info@allprosys.cz?subject=Z%C3%A1jem%20o%20Resilium%20Personal%20Performance";
 
 const navItems = [
   { label: "Proč trénovat", href: "#proc-trenovat" },
@@ -169,7 +169,7 @@ const faqs = [
   {
     question: "Je to terapie?",
     answer:
-      "Ne. Resilium Personal je praktický trénink dovedností. Neřeší diagnózy ani nenahrazuje odbornou psychologickou nebo zdravotní péči."
+      "Ne. Resilium Personal Performance je praktický trénink dovedností. Neřeší diagnózy ani nenahrazuje odbornou psychologickou nebo zdravotní péči."
   },
   {
     question: "Bude trénink psychicky náročný?",
@@ -189,13 +189,13 @@ const faqs = [
 ];
 
 export const metadata: Metadata = {
-  title: "Resilium Personal — naučte se reagovat klidněji pod tlakem",
+  title: "Resilium Personal Performance — naučte se reagovat klidněji pod tlakem",
   description:
     "Praktický 8hodinový trénink osobní odolnosti. Naučíte se pracovat se stresovou reakcí, nastavit hranice a jednat jistěji v náročných situacích.",
   openGraph: {
-    title: "Resilium Personal — praktický trénink reakce pod tlakem",
+    title: "Resilium Personal Performance — praktický trénink reakce pod tlakem",
     description:
-      "Když tělo reaguje rychleji než rozum, potřebujete jednoduchý postup. Resilium Personal učí klidnější, jistější a bezpečnější reakci v tlaku.",
+      "Když tělo reaguje rychleji než rozum, potřebujete jednoduchý postup. Resilium Personal Performance učí klidnější, jistější a bezpečnější reakci v tlaku.",
     type: "website",
     locale: "cs_CZ"
   }
@@ -215,7 +215,7 @@ function SectionHeading({
   return (
     <div className="max-w-4xl">
       <p className="eyebrow mb-4">{eyebrow}</p>
-      <h2 className={`font-heading text-3xl font-black leading-tight sm:text-5xl ${light ? "text-white" : "text-dark"}`}>
+      <h2 className={`font-heading text-3xl font-bold leading-tight sm:text-5xl ${light ? "text-white" : "text-dark"}`}>
         {title}
       </h2>
       {text ? <p className={`mt-6 text-lg leading-8 ${light ? "text-text-primary/90" : "text-slate-700"}`}>{text}</p> : null}
@@ -260,11 +260,11 @@ export default function PersonalPage() {
           <div className="flex items-center gap-2">
             <Link
               href="/organizace"
-              className="hidden rounded-full border border-white/15 px-4 py-2.5 text-sm font-extrabold text-text-primary transition hover:bg-white/10 sm:inline-flex"
+              className="hidden rounded-full border border-white/15 px-4 py-2.5 text-sm font-bold text-text-primary transition hover:bg-white/10 sm:inline-flex"
             >
               Pro organizace
             </Link>
-            <a href={personalMailto} className="rounded-full bg-accent px-4 py-2.5 text-sm font-extrabold text-white transition hover:bg-accent-warm">
+            <a href={personalMailto} className="rounded-full bg-accent px-4 py-2.5 text-sm font-bold text-white transition hover:bg-accent-warm">
               Chci informace
             </a>
           </div>
@@ -288,19 +288,19 @@ export default function PersonalPage() {
 
           <div className="section-shell relative pb-20 sm:pb-24 lg:pb-28">
             <div className="mb-10 overflow-hidden">
-              <div className="font-heading text-[14.5vw] font-black uppercase leading-none tracking-[0.04em] text-white lg:text-[8rem] xl:text-[9.5rem]">
-                RESILIUM PERSONAL
+              <div className="font-heading text-[12vw] font-bold uppercase leading-none tracking-[0.025em] text-white lg:text-[6.5rem] xl:text-[7.6rem]">
+                RESILIUM PERSONAL PERFORMANCE
               </div>
             </div>
 
             <div className="grid gap-10 lg:grid-cols-[1.04fr_0.96fr] lg:items-end">
               <div>
                 <p className="eyebrow mb-5">PRAKTICKÝ TRÉNINK OSOBNÍ ODOLNOSTI</p>
-                <h1 className="max-w-5xl font-heading text-4xl font-black leading-[1.04] text-white sm:text-6xl lg:text-7xl">
+                <h1 className="max-w-5xl font-heading text-4xl font-bold leading-[1.04] text-white sm:text-6xl lg:text-7xl">
                   Naučte se nezamrznout ve chvíli, kdy roste tlak.
                 </h1>
                 <p className="mt-6 max-w-4xl text-lg leading-8 text-text-muted sm:text-xl">
-                  Resilium Personal je 8hodinový praktický trénink pro lidi, kteří chtějí lépe zvládat stresovou reakci,
+                  Resilium Personal Performance je 8hodinový praktický trénink pro lidi, kteří chtějí lépe zvládat stresovou reakci,
                   konfliktní situace a vnitřní napětí. Naučíte se stabilizovat tělo, obnovit orientaci, nastavit hranice
                   a zvolit další krok.
                 </p>
@@ -319,13 +319,13 @@ export default function PersonalPage() {
                 <div className="grid gap-3 sm:grid-cols-2">
                   {heroSignals.map((signal) => (
                     <div key={signal.value} className="rounded-2xl border border-border/40 bg-bg-secondary/40 p-4">
-                      <p className="font-heading text-xl font-black text-white">{signal.value}</p>
+                      <p className="font-body text-xl font-bold text-white">{signal.value}</p>
                       <p className="mt-2 text-sm leading-6 text-text-muted">{signal.label}</p>
                     </div>
                   ))}
                 </div>
                 <div className="mt-5 rounded-2xl border border-border/40 bg-dark/20 p-5">
-                  <div className="grid grid-cols-2 gap-3 text-sm font-black uppercase tracking-[0.14em] text-text-primary">
+                  <div className="grid grid-cols-2 gap-3 text-sm font-bold uppercase tracking-[0.14em] text-text-primary">
                     {["Tělo", "Pozornost", "Rozhodnutí", "Akce"].map((word) => (
                       <span key={word} className="rounded-xl bg-white/10 px-3 py-3 text-center">
                         {word}
@@ -349,14 +349,14 @@ export default function PersonalPage() {
               text="V konfliktu, stresu nebo nečekané situaci tělo často převezme řízení dřív, než stačíte přemýšlet. Zrychlí se dech, zúží se pozornost, napnou se svaly a přichází známé reakce: zamrznutí, ústup, přehnaná obrana nebo chaos v hlavě."
             />
             <p className="mt-4 max-w-4xl text-lg leading-8 text-slate-700">
-              Resilium Personal vás naučí tyto první signály zachytit a převést je do konkrétního postupu, který můžete použít
+              Resilium Personal Performance vás naučí tyto první signály zachytit a převést je do konkrétního postupu, který můžete použít
               v běžném životě, práci i náročné komunikaci.
             </p>
             <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
               {problemCards.map((card) => (
                 <article key={card.title} className="light-card p-6 transition hover:-translate-y-1">
                   <div className="mb-6 h-1.5 w-14 rounded-full bg-accent" />
-                  <h3 className="font-heading text-2xl font-extrabold text-dark">{card.title}</h3>
+                  <h3 className="font-heading text-2xl font-bold text-dark">{card.title}</h3>
                   <p className="mt-4 leading-7 text-slate-700">{card.text}</p>
                 </article>
               ))}
@@ -388,17 +388,17 @@ export default function PersonalPage() {
             <div className="mt-12 grid gap-4 lg:grid-cols-4">
               {pressureProcess.map((step, index) => (
                 <article key={step.title} className="dark-card p-6">
-                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent text-sm font-black text-white">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-accent text-sm font-bold text-white">
                     {index + 1}
                   </span>
-                  <h3 className="mt-5 font-heading text-xl font-extrabold">{step.title}</h3>
+                  <h3 className="mt-5 font-heading text-xl font-bold">{step.title}</h3>
                   <p className="mt-4 leading-7 text-text-muted">{step.text}</p>
                 </article>
               ))}
             </div>
 
             <div className="mt-8 rounded-[1.25rem] border border-accent/35 bg-panel-dark/70 p-6 shadow-panel">
-              <h3 className="font-heading text-2xl font-black text-white">Příslib tréninku</h3>
+              <h3 className="font-heading text-2xl font-bold text-white">Příslib tréninku</h3>
               <p className="mt-3 max-w-4xl text-lg leading-8 text-text-muted">
                 Po jednom dni budete lépe rozumět své stresové reakci a odnesete si konkrétní postup, jak s ní pracovat v prvních
                 sekundách tlaku.
@@ -412,13 +412,13 @@ export default function PersonalPage() {
             <SectionHeading
               eyebrow="PILÍŘE TRÉNINKU"
               title="Tělo. Pozornost. Hranice. Akce."
-              text="Resilium Personal je osobní aplikace stejné metodiky: tělo, pozornost, rozhodnutí, akce. Tuto osu převádí do běžných situací jednotlivce. Proto pracujeme s tělem, pozorností, hranicemi a konkrétním dalším krokem. Nejde o pasivní relaxaci. Účastník si postupy zkouší v řízených situacích, kde vzniká mírný tlak, nekomfort nebo konflikt."
+              text="Resilium Personal Performance je osobní aplikace stejné metodiky: tělo, pozornost, rozhodnutí, akce. Tuto osu převádí do běžných situací jednotlivce. Proto pracujeme s tělem, pozorností, hranicemi a konkrétním dalším krokem. Nejde o pasivní relaxaci. Účastník si postupy zkouší v řízených situacích, kde vzniká mírný tlak, nekomfort nebo konflikt."
             />
             <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
               {pillars.map((pillar, index) => (
                 <article key={pillar.title} className="light-card p-6">
-                  <span className="text-sm font-black text-accent">{String(index + 1).padStart(2, "0")}</span>
-                  <h3 className="mt-5 font-heading text-xl font-extrabold text-dark">{pillar.title}</h3>
+                  <span className="text-sm font-bold text-accent">{String(index + 1).padStart(2, "0")}</span>
+                  <h3 className="mt-5 font-heading text-xl font-bold text-dark">{pillar.title}</h3>
                   <p className="mt-4 leading-7 text-slate-700">{pillar.text}</p>
                 </article>
               ))}
@@ -437,7 +437,7 @@ export default function PersonalPage() {
             <div className="mt-12 grid gap-5 lg:grid-cols-3">
               {benefits.map((benefit, index) => (
                 <article key={benefit.title} className={`dark-card p-6 ${index === 4 ? "lg:col-span-2" : ""}`}>
-                  <h3 className="font-heading text-xl font-extrabold text-white">{benefit.title}</h3>
+                  <h3 className="font-heading text-xl font-bold text-white">{benefit.title}</h3>
                   <p className="mt-4 leading-7 text-text-muted">{benefit.text}</p>
                 </article>
               ))}
@@ -458,7 +458,7 @@ export default function PersonalPage() {
             <div className="mt-12 grid gap-5 md:grid-cols-2">
               {methodSteps.map((step) => (
                 <article key={step.number} className="rounded-[1.25rem] border border-slate-200 bg-white p-6 shadow-soft">
-                  <p className="text-sm font-black uppercase tracking-[0.18em] text-accent">{step.number} — {step.title}</p>
+                  <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent">{step.number} — {step.title}</p>
                   <p className="mt-4 leading-7 text-slate-700">{step.text}</p>
                 </article>
               ))}
@@ -475,7 +475,7 @@ export default function PersonalPage() {
                 light
               />
               <p className="text-lg leading-8 text-text-primary/90">
-                Resilium Personal je intenzivní 8hodinový trénink v malé skupině. Nečeká vás pasivní seminář ani tvrdý fyzický
+                Resilium Personal Performance je intenzivní 8hodinový trénink v malé skupině. Nečeká vás pasivní seminář ani tvrdý fyzický
                 výcvik. Budete postupně zkoušet jednoduché techniky v bezpečně vedených situacích, kde vzniká mírný tlak,
                 nekomfort nebo konflikt.
               </p>
@@ -486,15 +486,15 @@ export default function PersonalPage() {
                 <dl className="grid gap-4">
                   {trainingParams.map((item) => (
                     <div key={item.label} className="rounded-2xl border border-border/40 bg-bg/28 p-4">
-                      <dt className="text-xs font-black uppercase tracking-[0.16em] text-accent-soft">{item.label}</dt>
-                      <dd className="mt-2 text-lg font-extrabold text-white">{item.value}</dd>
+                      <dt className="text-xs font-bold uppercase tracking-[0.16em] text-accent-soft">{item.label}</dt>
+                      <dd className="mt-2 text-lg font-bold text-white">{item.value}</dd>
                     </div>
                   ))}
                 </dl>
               </div>
 
               <article className="dark-card p-6 sm:p-7">
-                <h3 className="font-heading text-2xl font-black text-white">Co je součástí tréninku</h3>
+                <h3 className="font-heading text-2xl font-bold text-white">Co je součástí tréninku</h3>
                 <ul className="mt-6 grid gap-3">
                   {included.map((item) => (
                     <li key={item} className="flex gap-3 leading-7 text-text-primary">
@@ -515,7 +515,7 @@ export default function PersonalPage() {
               <SectionHeading
                 eyebrow="PRO KOHO JE TRÉNINK"
                 title="Pro lidi, kteří chtějí reagovat jistěji, ne tvrději."
-                text="Resilium Personal je vhodný pro běžné lidi, kteří chtějí získat větší stabilitu v náročných situacích. Není potřeba sportovní výkon, zkušenost se sebeobranou ani předchozí trénink."
+                text="Resilium Personal Performance je vhodný pro běžné lidi, kteří chtějí získat větší stabilitu v náročných situacích. Není potřeba sportovní výkon, zkušenost se sebeobranou ani předchozí trénink."
               />
               <div>
                 <ul className="light-card grid gap-3 p-6 sm:p-7">
@@ -543,7 +543,7 @@ export default function PersonalPage() {
             <div className="mt-10 grid gap-4">
               {faqs.map((faq) => (
                 <details key={faq.question} className="group rounded-[1.25rem] border border-slate-200 bg-white p-5 shadow-soft">
-                  <summary className="flex cursor-pointer list-none items-center justify-between gap-5 font-heading text-lg font-extrabold text-dark">
+                  <summary className="flex cursor-pointer list-none items-center justify-between gap-5 font-body text-lg font-bold text-dark">
                     <span>{faq.question}</span>
                     <span aria-hidden="true" className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-bg text-xl leading-none text-white transition group-open:rotate-45">
                       +
@@ -560,7 +560,7 @@ export default function PersonalPage() {
           <div className="section-shell">
             <div className="rounded-[1.75rem] border border-border/40 bg-panel-dark/80 p-7 shadow-panel sm:p-10 lg:p-12">
               <p className="eyebrow mb-4">NEJBLIŽŠÍ TRÉNINK</p>
-              <h2 className="max-w-4xl font-heading text-3xl font-black leading-tight sm:text-5xl">
+              <h2 className="max-w-4xl font-heading text-3xl font-bold leading-tight sm:text-5xl">
                 Chcete vědět o nejbližším termínu?
               </h2>
               <p className="mt-5 max-w-3xl text-lg leading-8 text-text-muted">
@@ -568,12 +568,12 @@ export default function PersonalPage() {
               </p>
 
               <div className="mt-8 rounded-[1.25rem] border border-border/40 bg-bg/28 p-5">
-                <h3 className="font-heading text-xl font-black text-white">Aktuální stav nejbližšího tréninku</h3>
+                <h3 className="font-heading text-xl font-bold text-white">Aktuální stav nejbližšího tréninku</h3>
                 <dl className="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
                   {trainingStatus.map((item) => (
                     <div key={item.label} className="rounded-2xl border border-border/35 bg-panel-dark/52 p-4">
-                      <dt className="text-xs font-black uppercase tracking-[0.16em] text-accent-soft">{item.label}</dt>
-                      <dd className="mt-2 font-extrabold text-text-primary">{item.value}</dd>
+                      <dt className="text-xs font-bold uppercase tracking-[0.16em] text-accent-soft">{item.label}</dt>
+                      <dd className="mt-2 font-bold text-text-primary">{item.value}</dd>
                     </div>
                   ))}
                 </dl>
@@ -584,7 +584,7 @@ export default function PersonalPage() {
               </div>
               <p className="mt-4 text-sm leading-6 text-text-muted">
                 Kontakt:{" "}
-                <a href="mailto:info@allprosys.cz" className="font-extrabold text-accent-soft">
+                <a href="mailto:info@allprosys.cz" className="font-bold text-accent-soft">
                   info@allprosys.cz
                 </a>
               </p>
@@ -600,13 +600,13 @@ export default function PersonalPage() {
         <div className="section-shell">
           <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr_0.9fr]">
             <div>
-              <p className="font-heading text-2xl font-black uppercase tracking-[0.12em]">RESILIUM PERSONAL</p>
+              <p className="font-body text-2xl font-bold uppercase tracking-[0.08em]">RESILIUM PERSONAL PERFORMANCE</p>
               <p className="mt-3 max-w-sm leading-7 text-text-muted">
                 Praktický trénink osobní odolnosti pro chvíle, kdy roste tlak.
               </p>
             </div>
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.16em] text-text-secondary">Odkazy</p>
+              <p className="text-sm font-bold uppercase tracking-[0.16em] text-text-secondary">Odkazy</p>
               <div className="mt-3 grid gap-2 font-semibold">
                 <Link href="/organizace">Pro organizace</Link>
                 <Link href="/">Úvod</Link>
@@ -614,14 +614,14 @@ export default function PersonalPage() {
               </div>
             </div>
             <div>
-              <p className="text-sm font-black uppercase tracking-[0.16em] text-text-secondary">Kontakt</p>
+              <p className="text-sm font-bold uppercase tracking-[0.16em] text-text-secondary">Kontakt</p>
               <p className="mt-3 font-semibold">
                 <a href="mailto:info@resilium.cz">info@resilium.cz</a>
               </p>
               <p className="mt-2 font-semibold">
                 <a href="https://www.resilium.cz">www.resilium.cz</a>
               </p>
-              <p className="mt-5 text-sm font-black uppercase tracking-[0.16em] text-text-secondary">Firma</p>
+              <p className="mt-5 text-sm font-bold uppercase tracking-[0.16em] text-text-secondary">Firma</p>
               <p className="mt-3 font-semibold">Allprosys.cz s.r.o.</p>
               <p className="mt-6 text-sm leading-6 text-text-muted">© Resilium / Allprosys.cz s.r.o. Všechna práva vyhrazena.</p>
             </div>

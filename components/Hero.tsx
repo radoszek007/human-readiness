@@ -8,7 +8,7 @@ export default function Hero() {
 
       <div className="section-shell relative pb-20 sm:pb-24 lg:pb-28">
         <div className="mb-10 overflow-hidden">
-          <div className="font-heading text-[18vw] font-black uppercase leading-none tracking-[0.08em] text-white sm:text-[16vw] lg:text-[11.2rem]">
+          <div className="font-heading text-[18vw] font-bold uppercase leading-none tracking-[0.08em] text-white sm:text-[16vw] lg:text-[11.2rem]">
             RESILIUM
           </div>
         </div>
@@ -16,7 +16,7 @@ export default function Hero() {
         <div className="grid items-end gap-10 lg:grid-cols-[1.04fr_0.96fr]">
           <div>
             <p className="eyebrow mb-5">SYSTÉM PŘIPRAVENOSTI</p>
-            <h1 className="max-w-4xl font-heading text-4xl font-black leading-[1.04] text-white sm:text-6xl lg:text-7xl">
+            <h1 className="max-w-4xl font-heading text-4xl font-bold leading-[1.04] text-white sm:text-6xl lg:text-7xl">
               Systém připravenosti pro tlak, konflikt a riziko
             </h1>
             <p className="mt-6 max-w-3xl text-lg leading-8 text-text-muted sm:text-xl">
@@ -54,7 +54,7 @@ export default function Hero() {
             <div className="grid gap-3">
               {["01 / Check", "02 / Observe", "03 / Resolve", "04 / Execute"].map((step) => (
                 <div key={step} className="flex items-center justify-between rounded-2xl border border-border/40 bg-bg-secondary/40 px-4 py-4">
-                  <span className="font-heading text-lg font-extrabold">{step}</span>
+                  <span className="font-body text-lg font-bold">{step}</span>
                   <span className="h-2 w-2 rounded-full bg-accent" />
                 </div>
               ))}

@@ -6,13 +6,13 @@ export default function FAQSection() {
       <div className="section-shell">
         <div className="max-w-3xl">
           <p className="eyebrow mb-4">FAQ</p>
-          <h2 className="font-heading text-3xl font-black leading-tight text-dark sm:text-5xl">Časté otázky</h2>
+          <h2 className="font-heading text-3xl font-bold leading-tight text-dark sm:text-5xl">Časté otázky</h2>
         </div>
 
         <div className="mt-10 grid gap-4">
           {faqs.map((faq) => (
             <details key={faq.question} className="group rounded-[1.25rem] border border-slate-200 bg-white p-5 shadow-soft">
-              <summary className="flex cursor-pointer list-none items-center justify-between gap-5 font-heading text-lg font-extrabold text-dark">
+              <summary className="flex cursor-pointer list-none items-center justify-between gap-5 font-body text-lg font-bold text-dark">
                 <span>{faq.question}</span>
                 <span aria-hidden="true" className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-bg text-xl leading-none text-white transition group-open:rotate-45">
                   +

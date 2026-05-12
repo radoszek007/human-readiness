@@ -22,7 +22,7 @@ export default function WhenResiliumMakesSense() {
           <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div>
               <p className="eyebrow mb-4">Kdy má Resilium smysl</p>
-              <h2 className="font-heading text-3xl font-black leading-tight text-dark sm:text-4xl">
+              <h2 className="font-heading text-3xl font-bold leading-tight text-dark sm:text-4xl">
                 Praktická příprava tam, kde běžné postupy pod tlakem selhávají
               </h2>
               <p className="mt-5 text-lg leading-8 text-slate-700">
@@ -44,7 +44,7 @@ export default function WhenResiliumMakesSense() {
         <div className="mt-5 rounded-[1.5rem] border border-slate-200 bg-white/82 p-6 shadow-soft sm:p-8">
           <div className="grid gap-6 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
             <div>
-              <h3 className="font-heading text-2xl font-black leading-tight text-dark sm:text-3xl">
+              <h3 className="font-heading text-2xl font-bold leading-tight text-dark sm:text-3xl">
                 Typické situace, které řešíme
               </h3>
               <p className="mt-4 leading-7 text-slate-700">
