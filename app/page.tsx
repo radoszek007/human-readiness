@@ -37,12 +37,15 @@ export default function Home() {
                 Pomáháme lidem, lídrům a organizacím zachovat orientaci, komunikovat jasně a jednat profesionálně ve chvílích,
                 kdy roste tlak.
               </p>
-              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+              <div className="mt-8 flex flex-col flex-wrap gap-3 sm:flex-row">
                 <Link href="#paths" className="cta-primary">
                   Vybrat správnou cestu
                 </Link>
                 <Link href="/metodika" className="cta-secondary">
                   Jak Resilium funguje
+                </Link>
+                <Link href="https://check.resilium.cz" className="cta-secondary" target="_blank" rel="noreferrer">
+                  Spustit readiness check
                 </Link>
               </div>
               <p className="mt-4 max-w-3xl text-sm leading-6 text-text-muted">
