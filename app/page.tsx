@@ -1,161 +1,159 @@
 import type { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
-
-const paths = [
-  {
-    title: "Resilium pro organizace",
-    subtitle: "Tlak, konflikt a riziko v pracovním prostředí",
-    text: "Pro firmy, školy, úřady a týmy, které potřebují zvládat tlak, konfliktní situace a krizovou komunikaci v reálném pracovním prostředí.",
-    result:
-      "Výsledkem je společný postup, jasnější komunikace a menší chaos ve chvílích, kdy tlak obvykle rozbíjí rozhodování.",
-    points: [
-      "týmová připravenost",
-      "krizová komunikace",
-      "osobní bezpečnost na pracovišti",
-      "leadership pod tlakem",
-      "scénáře podle reality organizace"
-    ],
-    cta: "Řeším připravenost organizace",
-    href: "/organizace"
-  },
-  {
-    title: "Resilium Personal Performance",
-    subtitle: "Osobní odolnost a jistota v náročných situacích",
-    text: "Pro jednotlivce, kteří chtějí v tlaku méně zamrzat, lépe nastavit hranice a získat konkrétní postup pro náročné situace.",
-    result:
-      "Výsledkem je větší jistota v prvních sekundách tlaku: méně zamrznutí, jasnější hranice a konkrétní další krok.",
-    points: [
-      "regulace stresové reakce",
-      "práce s tělem a pozorností",
-      "osobní hranice",
-      "jistota v konfliktu",
-      "veřejné tréninky"
-    ],
-    cta: "Chci trénovat osobní odolnost",
-    href: "/personal"
-  }
-];
+import ContactSection from "@/components/ContactSection";
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import SectionHeading from "@/components/SectionHeading";
+import { brandPaths, methodSteps, pressureCards, trustPoints } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Resilium – systém připravenosti",
+  title: "Resilium | Systém trénovaných reakcí pro tlak, konflikt a riziko",
   description:
-    "Rozcestník systému Resilium pro organizace a jednotlivce. Praktická připravenost pro tlak, konflikt a riziko."
+    "Resilium pomáhá lidem, lídrům a organizacím zachovat orientaci, komunikovat jasně a jednat profesionálně ve chvílích tlaku, konfliktu a rizika."
 };
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-bg text-white">
-      <section className="relative overflow-hidden px-5 py-6 sm:px-8 lg:px-10">
-        <div className="absolute inset-0 opacity-40 [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:72px_72px]" />
+    <>
+      <Header />
+      <main className="bg-section-light">
+        <section className="relative overflow-hidden bg-bg pt-36 text-white sm:pt-40 lg:pt-44">
+          <div className="absolute inset-0 opacity-40 [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:72px_72px]" />
+          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-section-light to-transparent" />
 
-        <nav className="relative mx-auto flex max-w-7xl items-center justify-between rounded-full border border-white/20 bg-panel-dark/70 px-4 py-3 shadow-panel backdrop-blur-xl">
-          <Link href="/" aria-label="Resilium úvod" className="flex items-center">
-            <Image src="/logo-cele.png" alt="Resilium" width={174} height={44} priority className="h-9 w-auto object-contain sm:h-10" />
-          </Link>
-          <div className="hidden items-center gap-2 md:flex">
-            <Link href="/organizace" className="rounded-full px-4 py-2 text-sm font-semibold text-text-muted transition hover:bg-white/10 hover:text-white">
-              Pro organizace
-            </Link>
-            <Link href="/personal" className="rounded-full px-4 py-2 text-sm font-semibold text-text-muted transition hover:bg-white/10 hover:text-white">
-              Personal Performance
-            </Link>
-            <a href="mailto:info@allprosys.cz" className="rounded-full bg-accent px-4 py-2.5 text-sm font-bold text-white transition hover:bg-accent-warm">
-              Kontakt
-            </a>
-          </div>
-          <a href="mailto:info@allprosys.cz" className="rounded-full bg-accent px-4 py-2.5 text-sm font-bold text-white transition hover:bg-accent-warm md:hidden">
-            Kontakt
-          </a>
-        </nav>
-        <div className="relative mx-auto mt-3 grid max-w-7xl grid-cols-2 gap-2 md:hidden">
-          <Link href="/organizace" className="rounded-full border border-white/16 bg-panel-dark/58 px-4 py-3 text-center text-sm font-bold text-text-primary backdrop-blur">
-            Pro organizace
-          </Link>
-          <Link href="/personal" className="rounded-full border border-white/16 bg-panel-dark/58 px-4 py-3 text-center text-sm font-bold text-text-primary backdrop-blur">
-            Personal Performance
-          </Link>
-        </div>
-
-        <div className="section-shell relative py-16 sm:py-20 lg:py-24">
-          <div className="mb-10 overflow-hidden">
-            <div className="font-heading text-[18vw] font-bold uppercase leading-none tracking-[0.08em] text-white sm:text-[16vw] lg:text-[11.2rem]">
-              RESILIUM
+          <div className="section-shell relative pb-20 sm:pb-24 lg:pb-28">
+            <div className="mb-8 overflow-hidden">
+              <div className="font-heading text-[18vw] font-bold uppercase leading-none tracking-[0.08em] text-white sm:text-[15vw] lg:text-[10rem]">
+                RESILIUM
+              </div>
             </div>
-          </div>
-
-          <div className="max-w-5xl">
-            <p className="eyebrow mb-5">SYSTÉM PŘIPRAVENOSTI</p>
-            <h1 className="font-heading text-4xl font-bold leading-[1.04] text-white sm:text-6xl lg:text-7xl">
-              Když roste tlak, rozhoduje připravenost člověka.
-            </h1>
-            <p className="mt-6 max-w-4xl text-lg leading-8 text-text-muted sm:text-xl">
-              V náročných situacích lidé často neztrácejí znalosti, ale přístup k nim. Resilium trénuje mentální, komunikační
-              a fyzickou připravenost člověka — schopnost zůstat funkční, zachovat orientaci a zvolit další krok v týmu,
-              v konfliktu i v osobním tlaku.
-            </p>
-            <p className="mt-4 max-w-3xl text-base leading-7 text-text-primary/88">
-              Vyberte si, zda řešíte připravenost organizace, nebo vlastní osobní odolnost.
-            </p>
-          </div>
-
-          <div className="mt-12 grid gap-5 lg:grid-cols-2">
-            {paths.map((path) => (
-              <article key={path.href} className="dark-card flex flex-col p-6 sm:p-8">
-                <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent-soft">{path.subtitle}</p>
-                <h2 className="mt-4 font-heading text-3xl font-bold leading-tight text-white sm:text-4xl">{path.title}</h2>
-                <p className="mt-5 text-lg leading-8 text-text-muted">{path.text}</p>
-                <p className="mt-4 leading-7 text-text-primary">{path.result}</p>
-                <ul className="mt-7 grid gap-3">
-                  {path.points.map((point) => (
-                    <li key={point} className="flex gap-3 leading-7 text-text-primary">
-                      <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-accent" />
-                      <span>{point}</span>
-                    </li>
-                  ))}
-                </ul>
-                <Link href={path.href} className="cta-primary mt-8 w-full sm:w-fit">
-                  {path.cta}
+            <div className="max-w-5xl">
+              <p className="eyebrow mb-5">SYSTÉM PŘIPRAVENOSTI</p>
+              <h1 className="font-heading text-4xl font-bold leading-[1.04] text-white sm:text-6xl lg:text-7xl">
+                Systém trénovaných reakcí pro mentální, komunikační a fyzickou připravenost.
+              </h1>
+              <p className="mt-6 max-w-4xl text-lg leading-8 text-text-muted sm:text-xl">
+                Pomáháme lidem, lídrům a organizacím zachovat orientaci, komunikovat jasně a jednat profesionálně ve chvílích,
+                kdy roste tlak.
+              </p>
+              <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+                <Link href="#paths" className="cta-primary">
+                  Vybrat správnou cestu
                 </Link>
-              </article>
-            ))}
-          </div>
-
-          <section className="mt-12 rounded-[1.75rem] border border-border/40 bg-panel-dark/78 p-7 shadow-panel backdrop-blur sm:p-10">
-            <p className="eyebrow mb-4">Společný základ</p>
-            <h2 className="font-heading text-3xl font-bold leading-tight text-white sm:text-4xl">Jeden princip. Dvě použití.</h2>
-            <p className="mt-5 max-w-4xl text-lg leading-8 text-text-muted">
-              Resilium staví na jedné metodické ose: tělo, pozornost, rozhodnutí, akce. V organizacích ji převádíme do týmové
-              komunikace, rolí, krizových scénářů a práce s rizikem. U jednotlivců do práce se stresem, hranicemi, prostorem
-              a prvním krokem v náročné situaci.
-            </p>
-          </section>
-        </div>
-      </section>
-
-      <footer className="bg-panel-dark py-10 text-white">
-        <div className="section-shell">
-          <div className="grid gap-8 md:grid-cols-[1fr_1fr_1fr]">
-            <div>
-              <Image src="/logo-cele.png" alt="Resilium" width={210} height={54} className="h-11 w-auto object-contain" />
-              <p className="mt-3 max-w-sm leading-7 text-text-muted">Systém připravenosti pro tlak, konflikt a riziko.</p>
-            </div>
-            <div>
-              <p className="text-sm font-bold uppercase tracking-[0.16em] text-text-secondary">Kontakt</p>
-              <p className="mt-3 font-semibold">
-                <a href="mailto:info@resilium.cz">info@resilium.cz</a>
-              </p>
-              <p className="mt-2 font-semibold">
-                <a href="https://www.resilium.cz">www.resilium.cz</a>
+                <Link href="/metodika" className="cta-secondary">
+                  Jak Resilium funguje
+                </Link>
+              </div>
+              <p className="mt-4 max-w-3xl text-sm leading-6 text-text-muted">
+                Praktický trénink těla, pozornosti, rozhodování a reakce v náročných situacích.
               </p>
             </div>
-            <div>
-              <p className="text-sm font-bold uppercase tracking-[0.16em] text-text-secondary">Firma</p>
-              <p className="mt-3 font-semibold">Allprosys.cz s.r.o.</p>
+          </div>
+        </section>
+
+        <section className="py-18 sm:py-20">
+          <div className="section-shell">
+            <SectionHeading
+              eyebrow="Tlak, konflikt, riziko"
+              title="Když tlak roste, nestačí vědět. Je potřeba jednat."
+              text="V klidu lidé často vědí, co by měli dělat. V náročné situaci rozhoduje, jestli dokážou udržet orientaci, komunikaci, hranice a schopnost provést správný krok."
+            />
+            <div className="mt-10 grid gap-5 md:grid-cols-3">
+              {pressureCards.map((card) => (
+                <article key={card.title} className="light-card p-6">
+                  <div className="mb-6 h-1.5 w-14 rounded-full bg-accent" />
+                  <h3 className="font-heading text-2xl font-bold text-dark">{card.title}</h3>
+                  <p className="mt-4 leading-7 text-slate-700">{card.text}</p>
+                </article>
+              ))}
             </div>
           </div>
-        </div>
-      </footer>
-    </main>
+        </section>
+
+        <section id="paths" className="bg-bg-secondary py-20 text-white sm:py-24">
+          <div className="section-shell">
+            <SectionHeading
+              eyebrow="Tři cesty"
+              title="Vyberte, kde má Resilium pomoci."
+              text="Každá oblast používá stejné metodické jádro. Liší se cílovou situací, jazykem, intenzitou a formou spolupráce."
+              light
+            />
+            <div className="mt-12 grid gap-5 lg:grid-cols-3">
+              {brandPaths.map((path) => (
+                <article key={path.href} className="dark-card flex h-full flex-col p-6 sm:p-7">
+                  <p className="text-sm font-bold uppercase tracking-[0.16em] text-accent-soft">{path.title}</p>
+                  <h3 className="mt-4 font-heading text-2xl font-bold leading-tight text-white">{path.headline}</h3>
+                  <p className="mt-4 leading-7 text-text-muted">{path.text}</p>
+                  <ul className="mt-6 grid gap-2">
+                    {path.points.map((point) => (
+                      <li key={point} className="flex gap-3 leading-7 text-text-primary">
+                        <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-accent" />
+                        <span>{point}</span>
+                      </li>
+                    ))}
+                  </ul>
+                  <Link href={path.href} className="cta-primary mt-7 w-full">
+                    {path.cta}
+                  </Link>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        <section className="py-20 sm:py-24">
+          <div className="section-shell">
+            <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+              <SectionHeading
+                eyebrow="Metodika ve zkratce"
+                title="Resilium pracuje s celou reakcí člověka."
+                text="Tlak se neodehrává jen v hlavě. Projevuje se v těle, hlasu, pozornosti, komunikaci, prostoru a rozhodování. Proto Resilium propojuje mentální, komunikační a fyzickou připravenost."
+              />
+              <div className="grid gap-4 sm:grid-cols-2">
+                {methodSteps.map((step, index) => (
+                  <article key={step.title} className="light-card p-6">
+                    <span className="text-sm font-bold text-accent">{String(index + 1).padStart(2, "0")}</span>
+                    <h3 className="mt-4 font-heading text-xl font-bold text-dark">{step.title}</h3>
+                    <p className="mt-3 leading-7 text-slate-700">{step.text}</p>
+                  </article>
+                ))}
+              </div>
+            </div>
+            <div className="mt-8">
+              <Link href="/metodika" className="cta-primary">
+                Poznat metodiku
+              </Link>
+            </div>
+          </div>
+        </section>
+
+        <section className="bg-bg py-20 text-white sm:py-24">
+          <div className="section-shell">
+            <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+              <SectionHeading
+                eyebrow="Důvěryhodnost"
+                title="Praktický systém postavený na zkušenosti."
+                text="Resilium vytvořil Radim Končítek, odborník na osobní bezpečnost, psychofyzickou odolnost, krizovou komunikaci a rozhodování pod tlakem. Přístup propojuje práci s tělem, komunikací, hranicemi, prostorem a praktickým nácvikem náročných situací."
+                light
+              />
+              <ul className="dark-card grid gap-3 p-6 sm:grid-cols-2 sm:p-7">
+                {trustPoints.map((point) => (
+                  <li key={point} className="flex gap-3 leading-7 text-text-primary">
+                    <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-accent" />
+                    <span>{point}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <ContactSection
+          title="Nevíte, která cesta je pro vás správná?"
+          text="Napište nám. Pomůžeme určit, zda dává smysl osobní trénink, Executive spolupráce nebo program pro organizaci."
+        />
+      </main>
+      <Footer />
+    </>
   );
 }
