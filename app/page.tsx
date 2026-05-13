@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
@@ -130,20 +131,38 @@ export default function Home() {
         <section className="bg-bg py-20 text-white sm:py-24">
           <div className="section-shell">
             <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
-              <SectionHeading
-                eyebrow="Důvěryhodnost"
-                title="Praktický systém postavený na zkušenosti."
-                text="Resilium vytvořil Radim Končítek, odborník na osobní bezpečnost, psychofyzickou odolnost, krizovou komunikaci a rozhodování pod tlakem. Přístup propojuje práci s tělem, komunikací, hranicemi, prostorem a praktickým nácvikem náročných situací."
-                light
-              />
-              <ul className="dark-card grid gap-3 p-6 sm:grid-cols-2 sm:p-7">
-                {trustPoints.map((point) => (
-                  <li key={point} className="flex gap-3 leading-7 text-text-primary">
-                    <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-accent" />
-                    <span>{point}</span>
-                  </li>
-                ))}
-              </ul>
+              <div>
+                <SectionHeading
+                  eyebrow="Důvěryhodnost"
+                  title="Praktický systém postavený na zkušenosti."
+                  text="Resilium vytvořil Mgr. Radim Končítek, odborník na osobní bezpečnost, psychofyzickou odolnost, krizovou komunikaci a rozhodování pod tlakem. Přístup propojuje práci s tělem, komunikací, hranicemi, prostorem a praktickým nácvikem náročných situací."
+                  light
+                />
+                <ul className="mt-8 grid gap-3 sm:grid-cols-2">
+                  {trustPoints.map((point) => (
+                    <li key={point} className="flex gap-3 rounded-2xl border border-border/35 bg-panel-dark/58 px-4 py-3 leading-7 text-text-primary">
+                      <span className="mt-2.5 h-2 w-2 shrink-0 rounded-full bg-accent" />
+                      <span>{point}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              <div className="dark-card overflow-hidden">
+                <div className="relative aspect-square">
+                  <Image
+                    src="/Insturctor.png"
+                    alt="Mgr. Radim Končítek, autor metodiky Resilium"
+                    fill
+                    sizes="(min-width: 1024px) 45vw, 100vw"
+                    className="object-cover object-center"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-dark/78 via-dark/12 to-transparent" />
+                  <div className="absolute inset-x-5 bottom-5 rounded-[1.25rem] border border-white/20 bg-panel-dark/82 p-5 backdrop-blur sm:inset-x-7 sm:bottom-7">
+                    <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent-soft">Mgr. Radim Končítek</p>
+                    <p className="mt-2 text-base font-bold leading-6 text-white">autor metodiky a hlavní lektor systému Resilium</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
