@@ -4,9 +4,9 @@ export const consultationMailto =
   "mailto:info@allprosys.cz?subject=Z%C3%A1jem%20o%20doporu%C4%8Den%C3%AD%20programu%20Resilium";
 
 export const navItems = [
-  { label: "Personal Performance", href: "/personal-performance" },
-  { label: "Executive", href: "/executive" },
-  { label: "For Organizations", href: "/organizations" },
+  { label: "Pro jednotlivce", href: "/personal-performance" },
+  { label: "Pro lídry", href: "/executive" },
+  { label: "Pro ogranizace", href: "/organizations" },
   { label: "Metodika", href: "/metodika" },
   { label: "Kontakt", href: "/#contact" }
 ];

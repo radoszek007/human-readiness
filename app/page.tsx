@@ -136,7 +136,7 @@ export default function Home() {
             <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
               <div>
                 <SectionHeading
-                  eyebrow="Důvěryhodnost"
+                  eyebrow="Autor"
                   title="Praktický systém postavený na zkušenosti."
                   text="Resilium vytvořil Mgr. Radim Končítek, odborník na osobní bezpečnost, psychofyzickou odolnost, krizovou komunikaci a rozhodování pod tlakem. Přístup propojuje práci s tělem, komunikací, hranicemi, prostorem a praktickým nácvikem náročných situací."
                   light
