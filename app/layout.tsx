@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="cs" className={`${montserrat.variable} scroll-smooth`}>
-      <body>{children}</body>
+      <body suppressHydrationWarning>{children}</body>
     </html>
   );
 }

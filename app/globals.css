@@ -61,18 +61,17 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.45rem, 2vw, 2rem) !important;
-  font-weight: 700 !important;
+  font-weight: 700;
   line-height: 1.16;
   letter-spacing: -0.02em;
+  overflow-wrap: break-word;
 }
 
 article h2,
 article h3 {
-  font-size: clamp(1.5rem, 2vw, 2rem) !important;
-  font-weight: 700 !important;
   line-height: 1.16;
   letter-spacing: -0.02em;
+  overflow-wrap: break-word;
 }
 
 p,

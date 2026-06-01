@@ -29,7 +29,7 @@ export default function Home() {
               </div>
             </div>
             <div className="max-w-5xl">
-              <p className="eyebrow mb-5">SYSTÉM PŘIPRAVENOSTI</p>
+              <p className="eyebrow mb-5">mind &amp; body resilience</p>
               <h1 className="font-heading text-4xl font-bold leading-[1.04] text-white sm:text-6xl lg:text-7xl">
                 Systém trénovaných reakcí pro mentální, komunikační a fyzickou připravenost.
               </h1>
@@ -59,7 +59,7 @@ export default function Home() {
           <div className="section-shell">
             <SectionHeading
               eyebrow="Tlak, konflikt, riziko"
-              title="Když tlak roste, nestačí vědět. Je potřeba jednat."
+              title="Tři situace, které vyžadují adekvátní, trénovanou reakci"
               text="V klidu lidé často vědí, co by měli dělat. V náročné situaci rozhoduje, jestli dokážou udržet orientaci, komunikaci, hranice a schopnost provést správný krok."
             />
             <div className="mt-10 grid gap-5 md:grid-cols-3">
@@ -171,7 +171,6 @@ export default function Home() {
         </section>
 
         <ContactSection
-          title="Nevíte, která cesta je pro vás správná?"
           text="Napište nám. Pomůžeme určit, zda dává smysl osobní trénink, Executive spolupráce nebo program pro organizaci."
         />
       </main>

@@ -37,7 +37,7 @@ export default function ExecutivePage() {
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link href="#contact" className="cta-primary">
-                Domluvit diskrétní konzultaci
+                Domluvit konzultaci
               </Link>
               <Link href="#spoluprace" className="cta-secondary">
                 Jak spolupráce probíhá
@@ -128,7 +128,7 @@ export default function ExecutivePage() {
                 pozorností, hlasem, rozhodováním, komunikací a přenosem do konkrétních situací.
               </p>
               <Link href="#contact" className="cta-primary mt-8">
-                Domluvit diskrétní Executive konzultaci
+                Domluvit konzultaci
               </Link>
             </div>
           </div>
@@ -154,7 +154,7 @@ export default function ExecutivePage() {
         </section>
 
         <ContactSection
-          title="Domluvit diskrétní Executive konzultaci"
+          title="Domluvit konzultaci"
           text="Popište stručně situaci, rozhodnutí nebo typ tlaku, který řešíte. Navrhneme bezpečný a věcný další krok."
           cta="Odeslat poptávku"
         />
