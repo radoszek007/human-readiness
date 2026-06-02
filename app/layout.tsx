@@ -13,6 +13,11 @@ export const metadata: Metadata = {
   title: "Resilium – systém připravenosti pro tlak, konflikt a riziko",
   description:
     "Praktický trénink pro firmy, týmy a organizace. Resilium rozvíjí schopnost lidí zachovat orientaci, komunikovat a jednat profesionálně v situacích tlaku, konfliktu a rizika.",
+  icons: {
+    icon: [{ url: "/resilium-logo.png", type: "image/png" }],
+    shortcut: [{ url: "/resilium-logo.png", type: "image/png" }],
+    apple: [{ url: "/resilium-logo.png", type: "image/png" }]
+  },
   openGraph: {
     title: "Resilium – systém připravenosti pro tlak, konflikt a riziko",
     description:
