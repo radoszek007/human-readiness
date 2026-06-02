@@ -30,6 +30,7 @@ export default function Footer() {
               <p>710 00 Ostrava</p>
               <p>IČ: 06365329</p>
               <p>DIČ: CZ06365329</p>
+              <p>Zapsaná v obchodním rejstříku vedeném Krajským soudem v Ostravě, oddíl C, vložka 71645.</p>
             </div>
           </div>
           <div>
@@ -45,9 +46,13 @@ export default function Footer() {
             </p>
           </div>
         </div>
-        <p className="mt-10 border-t border-white/10 pt-6 text-sm leading-6 text-text-muted">
-          © Resilium / Allprosys.cz s.r.o. Všechna práva vyhrazena.
-        </p>
+        <div className="mt-10 border-t border-white/10 pt-6 text-sm leading-6 text-text-muted">
+          <p>© Resilium / Allprosys.cz s.r.o. Všechna práva vyhrazena.</p>
+          <p className="mt-3 max-w-4xl">
+            Informace na webu mají obecný informační charakter. Program Resilium nenahrazuje zdravotní, psychologickou,
+            právní ani bezpečnostní službu poskytovanou v individuálním režimu.
+          </p>
+        </div>
       </div>
     </footer>
   );

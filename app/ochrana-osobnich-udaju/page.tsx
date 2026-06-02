@@ -16,6 +16,7 @@ const controllerDetails = [
   "Zámostní 1155/27, 710 00 Ostrava",
   "IČ: 06365329",
   "DIČ: CZ06365329",
+  "Společnost zapsaná v obchodním rejstříku vedeném Krajským soudem v Ostravě, oddíl C, vložka 71645.",
   `E-mail: ${contactEmail}`
 ];
 
@@ -49,6 +50,24 @@ const rights = [
   "vznést námitku proti zpracování založenému na oprávněném zájmu",
   "požadovat přenositelnost údajů, pokud se uplatní",
   "podat stížnost u Úřadu pro ochranu osobních údajů"
+];
+
+const processors = [
+  {
+    title: "Formspree",
+    text:
+      "Kontaktní formulář je technicky zpracován službou Formspree. Při odeslání formuláře jí mohou být předány údaje vyplněné ve formuláři a související technické údaje potřebné pro doručení zprávy."
+  },
+  {
+    title: "Vercel",
+    text:
+      "Web je provozován na infrastruktuře Vercel. V souvislosti s provozem webu mohou být zpracovány běžné technické logy a údaje potřebné pro dostupnost a bezpečnost webu."
+  },
+  {
+    title: "Další nezbytní dodavatelé",
+    text:
+      "Údaje mohou být zpřístupněny také dodavatelům e-mailových, účetních, právních nebo IT služeb, vždy pouze v rozsahu potřebném pro daný účel."
+  }
 ];
 
 export default function PrivacyPage() {
@@ -85,6 +104,10 @@ export default function PrivacyPage() {
                     <p key={item}>{item}</p>
                   ))}
                 </div>
+                <p className="mt-5 leading-7 text-slate-700">
+                  Správce nejmenoval pověřence pro ochranu osobních údajů. Dotazy a žádosti k osobním údajům posílejte na
+                  uvedený e-mail.
+                </p>
               </div>
             </div>
           </div>
@@ -123,9 +146,23 @@ export default function PrivacyPage() {
               <SectionHeading
                 eyebrow="Předávání a cookies"
                 title="Komu mohou být údaje zpřístupněny"
-                text="Osobní údaje mohou být zpřístupněny pouze osobám, které pro správce zajišťují nezbytné služby, zejména provoz webu, e-mailové služby, účetnictví, právní služby nebo IT podporu. Služby vybíráme tak, aby byla zajištěna odpovídající ochrana údajů."
+                text="Osobní údaje mohou být zpřístupněny pouze osobám, které pro správce zajišťují nezbytné služby, zejména provoz webu, doručení formulářových zpráv, e-mailové služby, účetnictví, právní služby nebo IT podporu. Služby vybíráme tak, aby byla zajištěna odpovídající ochrana údajů."
               />
               <div className="grid gap-5">
+                {processors.map((processor) => (
+                  <article key={processor.title} className="light-card p-6">
+                    <h3 className="font-heading text-2xl font-bold text-dark">{processor.title}</h3>
+                    <p className="mt-4 leading-7 text-slate-700">{processor.text}</p>
+                  </article>
+                ))}
+                <article className="light-card p-6">
+                  <h3 className="font-heading text-2xl font-bold text-dark">Předávání mimo EU</h3>
+                  <p className="mt-4 leading-7 text-slate-700">
+                    Někteří techničtí poskytovatelé mohou zpracovávat údaje také mimo Evropskou unii, zejména v USA. V
+                    takovém případě je předávání chráněno vhodnými zárukami podle GDPR, typicky standardními smluvními
+                    doložkami nebo obdobným smluvním mechanismem.
+                  </p>
+                </article>
                 <article className="light-card p-6">
                   <h3 className="font-heading text-2xl font-bold text-dark">Cookies a analytika</h3>
                   <p className="mt-4 leading-7 text-slate-700">

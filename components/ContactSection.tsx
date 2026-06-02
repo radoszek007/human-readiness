@@ -105,7 +105,8 @@ export default function ContactSection({
                 {cta}
               </button>
               <p className="mt-4 text-sm leading-6 text-text-muted">
-                Odesláním formuláře nevzniká žádný závazek. Informace o zpracování osobních údajů najdete na stránce{" "}
+                Odesláním formuláře nevzniká žádný závazek. Formulář je technicky zpracován službou Formspree. Informace
+                o zpracování osobních údajů najdete na stránce{" "}
                 <a href="/ochrana-osobnich-udaju" className="font-bold text-accent-soft">
                   Ochrana osobních údajů
                 </a>
