@@ -40,6 +40,13 @@ const processingRows = [
     data: "technické údaje ukládané v serverových protokolech, zejména IP adresa, čas přístupu, požadovaná URL, stavový kód a informace o prohlížeči",
     basis: "oprávněný zájem na bezpečnosti a funkčnosti webu podle čl. 6 odst. 1 písm. f) GDPR",
     retention: "po nezbytnou dobu pro zajištění bezpečnosti a řešení technických incidentů"
+  },
+  {
+    purpose: "Anonymní měření návštěvnosti webu",
+    data:
+      "navštívená stránka, čas návštěvy, aktivní doba na stránce, dosažená hloubka scrollu, zdroj návštěvy, typ zařízení, kliknutí na odkazy nebo tlačítka, anonymní identifikátor návštěvy a hash IP adresy",
+    basis: "oprávněný zájem na vyhodnocení funkčnosti a srozumitelnosti webu podle čl. 6 odst. 1 písm. f) GDPR",
+    retention: "po dobu nezbytnou pro vyhodnocení návštěvnosti, nejdéle 12 měsíců"
   }
 ];
 
@@ -166,9 +173,11 @@ export default function PrivacyPage() {
                 <article className="light-card p-6">
                   <h3 className="font-heading text-2xl font-bold text-dark">Cookies a analytika</h3>
                   <p className="mt-4 leading-7 text-slate-700">
-                    Web v současné podobě nepoužívá marketingové cookies ani analytické nástroje. Pro technický provoz mohou
-                    být zpracovány běžné serverové logy. Pokud budou na web doplněny analytické nebo marketingové nástroje,
-                    bude tato informace aktualizována a případný souhlas bude řešen samostatně.
+                    Web používá vlastní anonymní analytiku návštěvnosti bez marketingových cookies a bez předávání údajů
+                    externí analytické službě typu Google Analytics. Měření slouží ke zjištění, které stránky lidé navštěvují,
+                    odkud přicházejí, jak dlouho na stránkách zůstávají, kam až stránku posunou a na které odkazy nebo tlačítka
+                    klikají. Prohlížeč si může uložit anonymní identifikátor návštěvníka v lokálním úložišti, aby bylo možné
+                    odlišit opakovanou návštěvu od nové návštěvy.
                   </p>
                 </article>
                 <article className="light-card p-6">

@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat } from "next/font/google";
+import { Suspense } from "react";
+import AnalyticsTracker from "@/components/AnalyticsTracker";
 import "./globals.css";
 
 const montserrat = Montserrat({
@@ -34,7 +36,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="cs" className={`${montserrat.variable} scroll-smooth`}>
-      <body suppressHydrationWarning>{children}</body>
+      <body suppressHydrationWarning>
+        {children}
+        <Suspense fallback={null}>
+          <AnalyticsTracker />
+        </Suspense>
+      </body>
     </html>
   );
 }
