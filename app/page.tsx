@@ -18,26 +18,26 @@ export default function Home() {
     <>
       <Header />
       <main className="bg-section-light">
-        <section className="relative overflow-hidden bg-bg pt-36 text-white sm:pt-40 lg:pt-44">
+        <section className="relative overflow-hidden bg-bg pt-24 text-white sm:pt-40 lg:pt-44">
           <div className="absolute inset-0 opacity-40 [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:72px_72px]" />
           <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-section-light to-transparent" />
 
-          <div className="section-shell relative pb-20 sm:pb-24 lg:pb-28">
-            <div className="mb-8 overflow-hidden">
-              <div className="font-heading text-[18vw] font-bold uppercase leading-none tracking-[0.08em] text-white sm:text-[15vw] lg:text-[10rem]">
+          <div className="section-shell relative pb-12 sm:pb-24 lg:pb-28">
+            <div className="mb-4 overflow-hidden sm:mb-8">
+              <div className="font-heading text-[clamp(3.15rem,14.8vw,4.15rem)] font-bold uppercase leading-none tracking-[0.01em] text-white sm:text-[15vw] sm:tracking-[0.06em] lg:text-[10rem] lg:tracking-[0.08em]">
                 RESILIUM
               </div>
             </div>
             <div className="max-w-5xl">
               <p className="eyebrow mb-5">mind &amp; body resilience</p>
-              <h1 className="font-heading text-4xl font-bold leading-[1.04] text-white sm:text-6xl lg:text-7xl">
+              <h1 className="font-heading text-[1.82rem] font-bold leading-[1.05] text-white sm:text-6xl sm:leading-[1.04] lg:text-7xl">
                 Systém trénovaných reakcí pro mentální, komunikační a fyzickou připravenost.
               </h1>
-              <p className="mt-6 max-w-4xl text-lg leading-8 text-text-muted sm:text-xl">
+              <p className="mt-4 max-w-4xl text-base leading-7 text-text-muted sm:mt-6 sm:text-xl sm:leading-8">
                 Pomáháme lidem, lídrům a organizacím zachovat orientaci, komunikovat jasně a jednat profesionálně ve chvílích,
                 kdy roste tlak.
               </p>
-              <div className="mt-8 flex flex-col flex-wrap gap-3 sm:flex-row">
+              <div className="mt-6 flex flex-col flex-wrap gap-2.5 sm:mt-8 sm:flex-row sm:gap-3">
                 <Link href="#paths" className="cta-primary">
                   Vybrat správnou cestu
                 </Link>

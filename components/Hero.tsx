@@ -2,13 +2,13 @@ import { consultationMailto } from "@/lib/data";
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-bg pt-32 text-white sm:pt-36 lg:pt-40">
+    <section className="relative overflow-hidden bg-bg pt-24 text-white sm:pt-36 lg:pt-40">
       <div className="absolute inset-0 opacity-45 [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:64px_64px]" />
       <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-section-light to-transparent" />
 
-      <div className="section-shell relative pb-20 sm:pb-24 lg:pb-28">
-        <div className="mb-10 overflow-hidden">
-          <div className="font-heading text-[18vw] font-bold uppercase leading-none tracking-[0.08em] text-white sm:text-[16vw] lg:text-[11.2rem]">
+      <div className="section-shell relative pb-12 sm:pb-24 lg:pb-28">
+        <div className="mb-5 overflow-hidden sm:mb-10">
+          <div className="font-heading text-[clamp(3.15rem,14.8vw,4.15rem)] font-bold uppercase leading-none tracking-[0.01em] text-white sm:text-[16vw] sm:tracking-[0.06em] lg:text-[11.2rem] lg:tracking-[0.08em]">
             RESILIUM
           </div>
         </div>
@@ -16,10 +16,10 @@ export default function Hero() {
         <div className="grid items-end gap-10 lg:grid-cols-[1.04fr_0.96fr]">
           <div>
             <p className="eyebrow mb-5">SYSTÉM PŘIPRAVENOSTI</p>
-            <h1 className="max-w-4xl font-heading text-4xl font-bold leading-[1.04] text-white sm:text-6xl lg:text-7xl">
+            <h1 className="max-w-4xl font-heading text-[1.82rem] font-bold leading-[1.05] text-white sm:text-6xl sm:leading-[1.04] lg:text-7xl">
               Systém připravenosti pro tlak, konflikt a riziko
             </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-text-muted sm:text-xl">
+            <p className="mt-4 max-w-3xl text-base leading-7 text-text-muted sm:mt-6 sm:text-xl sm:leading-8">
               Resilium učí lidi a týmy zachovat orientaci, nastavit hranice, komunikovat jasně a jednat profesionálně
               ve chvílích, kdy roste psychický tlak, vzniká konflikt nebo se situace mění v bezpečnostní riziko.
             </p>
