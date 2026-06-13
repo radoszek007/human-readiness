@@ -12,6 +12,21 @@ import {
   executiveTraining
 } from "@/lib/data";
 
+const executiveStartSteps = [
+  {
+    title: "Vstupní situace",
+    text: "Začínáme konkrétním rozhodnutím, konfliktem, rolí nebo typem tlaku, který má dopad na vás i tým."
+  },
+  {
+    title: "Diskrétní formát",
+    text: "Spolupráce může být jednorázová konzultace, individuální protokol nebo intenzivní příprava na situaci."
+  },
+  {
+    title: "Praktický výstup",
+    text: "Výstupem jsou osobní postupy pro hlas, hranice, rozhodnutí, komunikaci a návrat k orientaci."
+  }
+];
+
 export const metadata: Metadata = {
   title: "Resilium Executive | Rozhodování a autorita pod tlakem",
   description:
@@ -35,9 +50,12 @@ export default function ExecutivePage() {
               Resilium Executive je individuální práce pro majitele firem, jednatele a manažery, kteří rozhodují v nejistotě,
               vedou lidi v náročných situacích a potřebují udržet stabilitu ve chvílích, kdy roste tlak.
             </p>
+            <p className="mt-5 max-w-3xl rounded-2xl border border-border/45 bg-panel-dark/55 px-4 py-3 text-sm font-semibold leading-6 text-text-primary sm:text-base">
+              Výstupem jsou osobní protokoly pro hlas, hranice, rozhodnutí a komunikaci v konkrétních situacích odpovědnosti.
+            </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link href="#contact" className="cta-primary">
-                Domluvit konzultaci
+                Domluvit nezávaznou konzultaci
               </Link>
               <Link href="#spoluprace" className="cta-secondary">
                 Jak spolupráce probíhá
@@ -113,6 +131,14 @@ export default function ExecutivePage() {
                 </article>
               ))}
             </div>
+            <div className="mt-8 grid gap-4 md:grid-cols-3">
+              {executiveStartSteps.map((step) => (
+                <article key={step.title} className="rounded-[1.25rem] border border-slate-200 bg-white p-5 shadow-soft">
+                  <h3 className="font-heading text-lg font-bold text-dark">{step.title}</h3>
+                  <p className="mt-3 leading-7 text-slate-700">{step.text}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -128,7 +154,7 @@ export default function ExecutivePage() {
                 pozorností, hlasem, rozhodováním, komunikací a přenosem do konkrétních situací.
               </p>
               <Link href="#contact" className="cta-primary mt-8">
-                Domluvit konzultaci
+                Domluvit nezávaznou konzultaci
               </Link>
             </div>
           </div>

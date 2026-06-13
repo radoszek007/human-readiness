@@ -28,6 +28,7 @@
 html {
   background: var(--color-bg);
   font-family: var(--font-body);
+  overflow-x: hidden;
 }
 
 body {
@@ -35,6 +36,7 @@ body {
   color: var(--color-dark);
   background: var(--color-section-light);
   font-family: var(--font-body);
+  overflow-x: hidden;
   text-rendering: optimizeLegibility;
 }
 
@@ -80,6 +82,7 @@ small {
 p,
 li {
   font-weight: 400;
+  overflow-wrap: break-word;
 }
 
 a {
@@ -98,7 +101,7 @@ a {
 
 @layer components {
   .section-shell {
-    @apply mx-auto w-full max-w-7xl px-5 sm:px-8 lg:px-10;
+    @apply mx-auto w-full min-w-0 max-w-7xl px-5 sm:px-8 lg:px-10;
   }
 
   .eyebrow {
@@ -114,10 +117,10 @@ a {
   }
 
   .cta-primary {
-    @apply inline-flex min-h-12 items-center justify-center rounded-full bg-accent px-6 py-3 text-center text-sm font-bold text-white shadow-[0_14px_32px_rgba(244,133,44,0.26)] transition hover:-translate-y-0.5 hover:bg-accent-warm focus:outline-none focus:ring-4 focus:ring-accent/30;
+    @apply inline-flex min-h-12 max-w-full items-center justify-center whitespace-normal rounded-full bg-accent px-6 py-3 text-center text-sm font-bold text-white shadow-[0_14px_32px_rgba(244,133,44,0.26)] transition hover:-translate-y-0.5 hover:bg-accent-warm focus:outline-none focus:ring-4 focus:ring-accent/30;
   }
 
   .cta-secondary {
-    @apply inline-flex min-h-12 items-center justify-center rounded-full border border-border/60 bg-white/10 px-6 py-3 text-center text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-accent-soft hover:bg-white/20 focus:outline-none focus:ring-4 focus:ring-accent/20;
+    @apply inline-flex min-h-12 max-w-full items-center justify-center whitespace-normal rounded-full border border-border/60 bg-white/10 px-6 py-3 text-center text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-accent-soft hover:bg-white/20 focus:outline-none focus:ring-4 focus:ring-accent/20;
   }
 }

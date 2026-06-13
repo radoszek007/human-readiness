@@ -52,10 +52,10 @@ export default function Header() {
         </div>
 
         <Link
-          href="/#paths"
+          href="/#contact"
           className="hidden rounded-full bg-accent px-4 py-2.5 text-sm font-bold text-white transition hover:bg-accent-warm lg:inline-flex"
         >
-          Vybrat program
+          Domluvit konzultaci
         </Link>
 
         <button
@@ -91,11 +91,11 @@ export default function Header() {
               </Link>
             ))}
             <Link
-              href="/#paths"
+              href="/#contact"
               className="mt-2 rounded-2xl bg-accent px-4 py-3 text-center text-sm font-bold text-white"
               onClick={() => setIsOpen(false)}
             >
-              Vybrat program
+              Domluvit konzultaci
             </Link>
           </div>
         </div>

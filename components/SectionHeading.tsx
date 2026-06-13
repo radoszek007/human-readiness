@@ -10,7 +10,7 @@ export default function SectionHeading({
   light?: boolean;
 }) {
   return (
-    <div className="max-w-4xl">
+    <div className="max-w-[22rem] sm:max-w-4xl">
       {eyebrow ? <p className="eyebrow mb-4">{eyebrow}</p> : null}
       <h2 className={`font-heading text-3xl font-bold leading-tight sm:text-5xl ${light ? "text-white" : "text-dark"}`}>
         {title}

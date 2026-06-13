@@ -3,10 +3,12 @@ export const contactEmail = "info@allprosys.cz";
 export const consultationMailto =
   "mailto:info@allprosys.cz?subject=Z%C3%A1jem%20o%20doporu%C4%8Den%C3%AD%20programu%20Resilium";
 
+export const readinessCheckUrl = "https://check.resilium.cz";
+
 export const navItems = [
   { label: "Pro jednotlivce", href: "/personal-performance" },
   { label: "Pro lídry", href: "/executive" },
-  { label: "Pro ogranizace", href: "/organizations" },
+  { label: "Pro organizace", href: "/organizations" },
   { label: "Metodika", href: "/metodika" },
   { label: "Kontakt", href: "/#contact" }
 ];
@@ -14,43 +16,142 @@ export const navItems = [
 export const pressureCards = [
   {
     title: "Tlak",
-    text: "Stres, nejistota, odpovědnost, zahlcení a rychlá rozhodnutí."
+    text: "Když se zrychlí tempo, přibývá odpovědnost a člověk musí rozhodnout dřív, než má ideální klid."
   },
   {
     title: "Konflikt",
-    text: "Nátlak, emoce, hranice, eskalace a komunikace s náročnými lidmi."
+    text: "Když druhá strana tlačí, zvyšuje hlas, překračuje hranice nebo hrozí eskalace kontaktu."
   },
   {
     title: "Riziko",
-    text: "Prostor, osobní bezpečnost, fyzická nejistota a nutnost jednat včas."
+    text: "Když je potřeba vnímat prostor, vlastní bezpečí, bezpečný odstup a včasný další krok."
   }
 ];
 
 export const brandPaths = [
   {
-    title: "Resilium Personal Performance",
-    headline: "Pro jednotlivce, kteří chtějí lépe fungovat pod tlakem.",
+    title: "Pro jednotlivce",
+    decision: "Osobní reakce, hranice a stabilita pod tlakem.",
+    headline: "Osobní trénink pro lepší reakci pod tlakem.",
     text: "Praktický trénink osobní stability, hranic, rozhodování a reakce v každodenních náročných situacích.",
+    audience: "Pro lidi, kteří chtějí zvládat stres, konflikty a vlastní reakce v práci i osobním životě.",
+    situation: "Náročný rozhovor, tlak na výkon, konflikt, únava nebo ztráta hranic.",
+    outcome: "Jasnější postup, klidnější komunikace a větší jistota v prvních sekundách tlaku.",
     points: ["osobní stabilita", "hranice a komunikace", "rozhodování v zátěži", "návrat do klidu"],
-    cta: "Chci osobní výkon pod tlakem",
-    href: "/personal-performance"
+    cta: "Nezávazně poptat osobní trénink",
+    contactHref: "/?program=personal#contact",
+    detailHref: "/personal-performance"
   },
   {
-    title: "Resilium Executive",
-    headline: "Pro lídry, kteří rozhodují v nejistotě.",
+    title: "Pro lídry",
+    decision: "Rozhodování, autorita a komunikace v nejistotě.",
+    headline: "Individuální práce pro rozhodování v nejistotě.",
     text: "Individuální práce pro majitele, CEO a manažery zaměřená na úsudek, autoritu, komunikaci a rozhodnost pod tlakem.",
+    audience: "Pro majitele, CEO, jednatele a manažery, jejichž reakce ovlivňuje rozhodnutí i tým.",
+    situation: "Krizové rozhodnutí, konflikt s klíčovým člověkem nebo jednání pod tlakem.",
+    outcome: "Osobní protokoly pro klidnější hlas, jasné hranice a rozhodnější vedení.",
     points: ["osobní protokoly", "krizová komunikace", "autorita bez agrese", "rozhodování pod tlakem"],
-    cta: "Chci Executive konzultaci",
-    href: "/executive"
+    cta: "Nezávazně konzultovat pro lídry",
+    contactHref: "/?program=executive#contact",
+    detailHref: "/executive"
   },
   {
-    title: "Resilium for Organizations",
-    headline: "Pro firmy, instituce a týmy.",
+    title: "Pro organizace",
+    decision: "Týmová připravenost na konflikt, tlak a riziko.",
+    headline: "Programy pro firmy, instituce a týmy.",
     text: "Systém praktické připravenosti lidí a týmů na tlak, konflikt, krizovou komunikaci a rizikové situace.",
+    audience: "Pro týmy v kontaktu s lidmi, provozy s rizikem eskalace a organizace s odpovědností za bezpečí.",
+    situation: "Konfliktní klient, tlak na front-office, eskalace v týmu nebo rizikový provoz.",
+    outcome: "Společný jazyk, role, signály a praktičtější reakce v náročných situacích.",
     points: ["jistější zaměstnanci", "méně chaosu v eskalaci", "týmová koordinace", "scénáře z praxe"],
-    cta: "Chci připravit tým",
-    href: "/organizations"
+    cta: "Nezávazně poptat program pro organizaci",
+    contactHref: "/?program=organizations#contact",
+    detailHref: "/organizations"
   }
+];
+
+export const trustProofs = [
+  {
+    title: "Praktický nácvik místo přednášky",
+    text: "Účastníci si reakce zkouší v řízených situacích, ne jen v prezentaci."
+  },
+  {
+    title: "Scénáře podle reality klienta",
+    text: "Trénink vychází z konkrétních rozhovorů, rolí, provozů a rizik, která lidé opravdu řeší."
+  },
+  {
+    title: "Mentální, komunikační i fyzická vrstva",
+    text: "Resilium propojuje dech, postoj, pozornost, hlas, hranice, prostor a rozhodnutí."
+  },
+  {
+    title: "Bezpečný a věcný začátek",
+    text: "První krok je nezávazná konzultace, ve které se určí vhodný formát a míra intenzity."
+  }
+];
+
+export const trainingComparison = [
+  {
+    common: "Vysvětlení principů a doporučených postupů.",
+    resilium: "Převod principů do praktického nácviku v konkrétní situaci."
+  },
+  {
+    common: "Modelové příklady nebo běžné hraní rolí.",
+    resilium: "Řízené simulace, ve kterých si člověk ověří, jak pod tlakem skutečně reaguje."
+  },
+  {
+    common: "Komunikační techniky hlavně na úrovni slov.",
+    resilium: "Práce s hlasem, postojem, odstupem, hranicemi, prostorem i rozhodnutím."
+  },
+  {
+    common: "Racionální rozbor toho, co by bylo správné udělat.",
+    resilium: "Nácvik prvních sekund tlaku, kdy se mění pozornost, tělo i schopnost jednat."
+  },
+  {
+    common: "Jednorázové pochopení tématu.",
+    resilium: "Postup, který se dá opakovat, upravovat a přenést do reálných situací."
+  }
+];
+
+export const useCases = [
+  {
+    title: "Náročný rozhovor",
+    text: "Když potřebujete udržet klid, hlas a hranice ve chvíli, kdy druhá strana tlačí."
+  },
+  {
+    title: "Rozhodnutí pod tlakem",
+    text: "Když není ideální čas ani úplná jistota, ale další krok už nejde odkládat."
+  },
+  {
+    title: "Kontakt s konfliktním člověkem",
+    text: "Když je potřeba deeskalovat, chránit osobní prostor a ukončit situaci profesionálně."
+  },
+  {
+    title: "Týmová reakce při eskalaci",
+    text: "Když lidé potřebují společný jazyk, role a signály, aby se situace nerozpadla do chaosu."
+  },
+  {
+    title: "Front-office a práce s veřejností",
+    text: "Když zaměstnanci opakovaně čelí emocím, nátlaku, stížnostem nebo nejistému chování klientů."
+  },
+  {
+    title: "Leadership v nejistotě",
+    text: "Když reakce lídra určuje atmosféru, rozhodnost a další chování týmu."
+  }
+];
+
+export const contactProblemOptions = [
+  "stres a tlak",
+  "konfliktní komunikace",
+  "hranice a autorita",
+  "rozhodování pod tlakem",
+  "týmová reakce",
+  "riziková nebo bezpečnostní situace"
+];
+
+export const contactSteps = [
+  "Do 1-2 pracovních dnů se ozveme e-mailem.",
+  "Na krátké konzultaci pojmenujeme situace, které potřebujete zvládat.",
+  "Doporučíme vhodný program, rozsah a další krok bez závazku."
 ];
 
 export const methodSteps = [
@@ -142,15 +243,15 @@ export const personalAudience = [
 export const personalFormats = [
   {
     title: "Úvodní workshop",
-    text: "Krátký vstup do principů Resilia, práce s první reakcí a základním protokolem pro tlak."
+    text: "2-3 hodiny. Krátký vstup do principů Resilia, práce s první reakcí a základním protokolem pro tlak."
   },
   {
     title: "Jednodenní trénink",
-    text: "Praktický den zaměřený na tělo, pozornost, hranice, komunikaci a akci."
+    text: "1 den. Praktický trénink těla, pozornosti, hranic, komunikace a akce v modelových situacích."
   },
   {
     title: "Navazující cyklus",
-    text: "Hlubší práce pro ty, kteří chtějí principy Resilia převést do každodenního života."
+    text: "3-6 setkání. Hlubší práce pro převod principů Resilia do každodenního života."
   }
 ];
 

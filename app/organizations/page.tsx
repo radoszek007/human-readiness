@@ -15,10 +15,25 @@ import {
 } from "@/lib/data";
 
 export const metadata: Metadata = {
-  title: "Resilium for Organizations | Připravenost týmů na tlak, konflikt a riziko",
+  title: "Resilium pro organizace | Připravenost týmů na tlak, konflikt a riziko",
   description:
     "Programy pro firmy, instituce a týmy. Praktický trénink připravenosti lidí na tlak, konflikt, krizovou komunikaci a rizikové situace."
 };
+
+const organizationStartSteps = [
+  {
+    title: "1. Zmapujeme prostředí",
+    text: "Pojmenujeme role, rizikové kontakty, typické konflikty, provozní omezení a cíle programu."
+  },
+  {
+    title: "2. Vybereme scénáře",
+    text: "Trénink stavíme na situacích, které lidé opravdu zažívají: klient, tým, provoz, veřejnost nebo krizová role."
+  },
+  {
+    title: "3. Doporučíme rozsah",
+    text: "Navrhneme vhodnou variantu od základního workshopu po program s modelovými situacemi a doporučeními pro praxi."
+  }
+];
 
 export default function OrganizationsPage() {
   return (
@@ -29,17 +44,20 @@ export default function OrganizationsPage() {
           <div className="absolute inset-0 opacity-40 [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:72px_72px]" />
           <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-section-light to-transparent" />
           <div className="section-shell relative pb-20 sm:pb-24 lg:pb-28">
-            <p className="eyebrow mb-5">Resilium for Organizations</p>
+            <p className="eyebrow mb-5">Resilium pro organizace</p>
             <h1 className="max-w-5xl font-heading text-4xl font-bold leading-[1.04] text-white sm:text-6xl lg:text-7xl">
               Připravte lidi na tlak, konflikt a riziko.
             </h1>
             <p className="mt-6 max-w-4xl text-lg leading-8 text-text-muted sm:text-xl">
-              Resilium for Organizations pomáhá firmám, institucím a týmům trénovat reakce pro situace, kde roste stres,
+              Resilium pro organizace pomáhá firmám, institucím a týmům trénovat reakce pro situace, kde roste stres,
               vzniká konflikt, narušují se hranice nebo hrozí bezpečnostní riziko.
+            </p>
+            <p className="mt-5 max-w-3xl rounded-2xl border border-border/45 bg-panel-dark/55 px-4 py-3 text-sm font-semibold leading-6 text-text-primary sm:text-base">
+              Výstupem jsou praktické scénáře, společný jazyk, role a postupy, které tým dokáže použít při eskalaci.
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link href="#contact" className="cta-primary">
-                Domluvit konzultaci pro organizaci
+                Domluvit nezávaznou konzultaci
               </Link>
               <Link href="#programy" className="cta-secondary">
                 Prohlédnout programy
@@ -103,7 +121,7 @@ export default function OrganizationsPage() {
 
         <section id="programy" className="py-20 sm:py-24">
           <div className="section-shell">
-            <SectionHeading eyebrow="Programy" title="Programy Resilium for Organizations" />
+            <SectionHeading eyebrow="Programy" title="Programy Resilium pro organizace" />
             <div className="mt-12 grid gap-5 md:grid-cols-2">
               {organizationPrograms.map((program) => (
                 <article key={program.name} className="light-card p-6 sm:p-7">
@@ -117,6 +135,14 @@ export default function OrganizationsPage() {
             <p className="mt-6 max-w-3xl rounded-2xl border border-border/35 bg-white/80 p-5 leading-7 text-slate-700 shadow-soft">
               OMEGA je specializovaný modul. Není hlavní tváří Resilia.
             </p>
+            <div className="mt-8 grid gap-4 md:grid-cols-3">
+              {organizationStartSteps.map((step) => (
+                <article key={step.title} className="rounded-[1.25rem] border border-slate-200 bg-white p-5 shadow-soft">
+                  <h3 className="font-heading text-lg font-bold text-dark">{step.title}</h3>
+                  <p className="mt-3 leading-7 text-slate-700">{step.text}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 

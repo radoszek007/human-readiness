@@ -14,6 +14,21 @@ export const metadata: Metadata = {
 
 const heroParams = ["praktický trénink", "žádná pasivní přednáška", "tělo, pozornost, hranice, akce", "přenos do každodenního života"];
 
+const personalStartSteps = [
+  {
+    title: "1. Popíšete situace",
+    text: "Stačí stručně napsat, kde nejčastěji ztrácíte klid, hranice nebo jistotu v reakci."
+  },
+  {
+    title: "2. Doporučíme první formát",
+    text: "Podle cíle navrhneme úvodní workshop, jednodenní trénink nebo navazující cyklus."
+  },
+  {
+    title: "3. Odnesete si použitelný postup",
+    text: "Cílem není motivace na pár dní, ale jednoduchý postup pro tlak, rozhovor a návrat do klidu."
+  }
+];
+
 export default function PersonalPerformancePage() {
   return (
     <>
@@ -31,9 +46,12 @@ export default function PersonalPerformancePage() {
               Resilium Personal Performance je praktický trénink pro jednotlivce, kteří chtějí lépe pracovat se stresem, hranicemi,
               rozhodováním a vlastní reakcí v náročných situacích.
             </p>
+            <p className="mt-5 max-w-3xl rounded-2xl border border-border/45 bg-panel-dark/55 px-4 py-3 text-sm font-semibold leading-6 text-text-primary sm:text-base">
+              Výstupem je jednoduchý osobní postup pro první sekundy tlaku, jasnější hranice a návrat do klidu.
+            </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <Link href="#contact" className="cta-primary">
-                Chci začít
+                Domluvit nezávaznou konzultaci
               </Link>
               <Link href="#trenink" className="cta-secondary">
                 Jak trénink funguje
@@ -121,6 +139,14 @@ export default function PersonalPerformancePage() {
                 </article>
               ))}
             </div>
+            <div className="mt-8 grid gap-4 md:grid-cols-3">
+              {personalStartSteps.map((step) => (
+                <article key={step.title} className="rounded-[1.25rem] border border-slate-200 bg-white p-5 shadow-soft">
+                  <h3 className="font-heading text-lg font-bold text-dark">{step.title}</h3>
+                  <p className="mt-3 leading-7 text-slate-700">{step.text}</p>
+                </article>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -133,7 +159,7 @@ export default function PersonalPerformancePage() {
                 Po prvním programu může navázat další workshop, individuální práce, komunitní trénink nebo přenos principů do pracovního prostředí.
               </p>
               <Link href="#contact" className="cta-primary mt-8">
-                Chci začít s Personal Performance
+                Domluvit nezávaznou konzultaci
               </Link>
             </div>
           </div>

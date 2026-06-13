@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <Image src="/logo-cele.png" alt="Resilium" width={210} height={54} className="h-11 w-auto object-contain" />
             <p className="mt-3 max-w-sm leading-7 text-text-muted">
-              Systém trénovaných reakcí pro tlak, konflikt a riziko.
+              Praktické tréninky a programy pro zvládání tlaku, konfliktu a rizikových situací.
             </p>
           </div>
           <div>
@@ -18,7 +18,7 @@ export default function Footer() {
             <div className="mt-3 grid gap-2 font-semibold text-text-primary">
               <Link href="/personal-performance">Personal Performance</Link>
               <Link href="/executive">Executive</Link>
-              <Link href="/organizations">For Organizations</Link>
+              <Link href="/organizations">Pro organizace</Link>
               <Link href="/metodika">Metodika</Link>
             </div>
           </div>
