@@ -29,14 +29,8 @@ export default function Home() {
       <main className="bg-section-light">
         <section className="relative overflow-x-clip bg-bg pt-24 text-white sm:pt-40 lg:pt-44">
           <div className="absolute inset-0 opacity-40 [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:72px_72px]" />
-          <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-section-light to-transparent" />
 
-          <div className="section-shell relative pb-8 sm:pb-24 lg:pb-28">
-            <div className="mb-4 overflow-hidden sm:mb-8">
-              <div className="max-w-full font-heading text-[clamp(2.45rem,12vw,3.4rem)] font-bold uppercase leading-none tracking-[0.01em] text-white sm:text-[12vw] sm:tracking-[0.05em] lg:text-[8.5rem] lg:tracking-[0.07em]">
-                RESILIUM
-              </div>
-            </div>
+          <div className="section-shell relative pb-14 sm:pb-24 lg:pb-28">
             <div className="grid max-w-6xl gap-8 lg:grid-cols-[minmax(0,1fr)_minmax(22rem,0.45fr)] lg:items-end">
               <div className="max-w-[22rem] sm:max-w-5xl">
                 <p className="eyebrow mb-5">praktické tréninky připravenosti</p>
@@ -57,7 +51,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <aside className="rounded-[1.25rem] border border-border/35 bg-panel-dark/52 p-5 shadow-panel backdrop-blur">
+              <aside className="hidden rounded-[1.25rem] border border-border/35 bg-panel-dark/52 p-5 shadow-panel backdrop-blur lg:block">
                 <p className="text-xs font-bold uppercase tracking-[0.16em] text-accent-soft">Programy Resilium</p>
                 <div className="mt-4 divide-y divide-border/30">
                   {brandPaths.map((path) => (
@@ -95,38 +89,48 @@ export default function Home() {
               text="Zvolte možnost, která nejlépe odpovídá vaší roli. Přesný formát, rozsah a intenzitu upřesníme až v nezávazné konzultaci."
               light
             />
-            <div className="mt-12 grid gap-5 lg:grid-cols-3">
+            <div className="mt-10 grid gap-4 lg:grid-cols-3">
               {brandPaths.map((path) => (
-                <article key={path.detailHref} className="dark-card flex h-full flex-col p-6 sm:p-7">
-                  <p className="text-sm font-bold uppercase tracking-[0.16em] text-accent-soft">{path.title}</p>
-                  <p className="mt-4 rounded-2xl border border-accent/35 bg-accent/10 px-4 py-3 text-sm font-bold leading-6 text-white">
-                    {path.decision}
-                  </p>
-                  <h3 className="mt-4 font-heading text-2xl font-bold leading-tight text-white">{path.headline}</h3>
-                  <div className="mt-6 grid gap-3">
-                    {[
-                      ["Pro koho", path.audience],
-                      ["Typická situace", path.situation]
-                    ].map(([label, text]) => (
-                      <div key={label} className="rounded-2xl border border-border/35 bg-bg/24 p-4">
-                        <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent-soft">{label}</p>
-                        <p className="mt-2 text-sm leading-6 text-text-primary">{text}</p>
-                      </div>
-                    ))}
+                <details
+                  key={path.detailHref}
+                  className="group min-w-0 overflow-hidden rounded-[1.25rem] border border-border/35 bg-panel-dark/58 text-text-primary shadow-panel transition open:border-accent-soft/60 open:bg-panel-dark/72"
+                >
+                  <summary className="grid min-w-0 cursor-pointer list-none grid-cols-[minmax(0,1fr)_2.5rem] items-start gap-4 p-5 marker:hidden sm:p-6 [&::-webkit-details-marker]:hidden">
+                    <div className="min-w-0">
+                      <h3 className="font-heading text-2xl font-bold leading-tight text-white">{path.title}</h3>
+                      <p className="mt-3 text-xs font-bold uppercase tracking-[0.16em] text-accent-soft">{path.headline}</p>
+                      <p className="mt-3 text-sm leading-6 text-text-muted">{path.decision}</p>
+                    </div>
+                    <span className="inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-border/45 text-lg font-bold text-accent-soft transition group-open:rotate-45 group-open:border-accent-soft group-open:bg-white/10">
+                      +
+                    </span>
+                  </summary>
+                  <div className="border-t border-border/30 px-5 pb-5 pt-4 sm:px-6 sm:pb-6">
+                    <div className="grid gap-3">
+                      {[
+                        ["Pro koho", path.audience],
+                        ["Typická situace", path.situation]
+                      ].map(([label, text]) => (
+                        <div key={label} className="rounded-2xl border border-border/35 bg-bg/24 p-4">
+                          <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent-soft">{label}</p>
+                          <p className="mt-2 text-sm leading-6 text-text-primary">{text}</p>
+                        </div>
+                      ))}
+                    </div>
+                    <p className="mt-4 text-sm font-semibold leading-6 text-text-muted">{path.outcome}</p>
+                    <div className="mt-5 flex flex-col gap-3 sm:flex-row">
+                      <Link href={path.contactHref} className="cta-primary w-full sm:w-fit">
+                        {path.cta}
+                      </Link>
+                      <Link
+                        href={path.detailHref}
+                        className="inline-flex min-h-12 w-full items-center justify-center rounded-full border border-border/45 px-5 py-3 text-center text-sm font-bold text-text-muted transition hover:border-accent-soft hover:bg-white/10 hover:text-text-primary sm:w-fit"
+                      >
+                        Přečíst detail programu
+                      </Link>
+                    </div>
                   </div>
-                  <p className="mt-4 text-sm font-semibold leading-6 text-text-muted">{path.outcome}</p>
-                  <div className="mt-auto pt-7">
-                    <Link href={path.contactHref} className="cta-primary w-full">
-                      {path.cta}
-                    </Link>
-                    <Link
-                      href={path.detailHref}
-                      className="mt-3 inline-flex w-full justify-center rounded-full border border-border/45 px-5 py-3 text-center text-sm font-bold text-text-muted transition hover:border-accent-soft hover:bg-white/10 hover:text-text-primary"
-                    >
-                      Přečíst detail programu
-                    </Link>
-                  </div>
-                </article>
+                </details>
               ))}
             </div>
             <div className="mt-8 rounded-[1.25rem] border border-border/35 bg-panel-dark/60 p-5 text-text-primary">
@@ -149,8 +153,8 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="mt-5 overflow-hidden rounded-[1.25rem] border border-border/35 bg-bg/24 text-text-primary">
-              <div className="border-b border-border/30 p-5 sm:p-6">
+            <div className="mt-5 overflow-hidden rounded-[1.25rem] border border-border/35 bg-panel-dark/42 text-text-primary shadow-panel">
+              <div className="border-b border-border/30 bg-bg/24 p-5 sm:p-6">
                 <p className="font-heading text-xl font-bold text-white sm:text-2xl">V čem je Resilium jiné než běžné školení</p>
                 <p className="mt-3 max-w-4xl text-sm leading-6 text-text-muted sm:text-base sm:leading-7">
                   Nesoutěžíme s přednáškami ani semináři. Resilium přidává řízený nácvik situací, ve kterých se ukáže,
@@ -159,26 +163,41 @@ export default function Home() {
               </div>
 
               <div className="hidden md:block">
-                <div className="grid grid-cols-2 border-b border-border/30 bg-panel-dark/36">
-                  <div className="border-r border-border/30 px-6 py-4 text-xs font-bold uppercase tracking-[0.14em] text-text-secondary">
-                    V mnoha školeních se obvykle pracuje s
+                <div className="grid grid-cols-[0.9fr_1.1fr] border-b border-border/30 bg-bg/28">
+                  <div className="border-r border-border/30 px-6 py-5">
+                    <span className="inline-flex rounded-full border border-border/35 px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-text-secondary">
+                      Běžné školení
+                    </span>
+                    <p className="mt-3 text-sm font-semibold leading-6 text-text-muted">Obvykle se pracuje s</p>
                   </div>
-                  <div className="px-6 py-4 text-xs font-bold uppercase tracking-[0.14em] text-accent-soft">
-                    V Resiliu k tomu přidáváme
+                  <div className="px-6 py-5">
+                    <span className="inline-flex rounded-full border border-accent/45 bg-accent/10 px-3 py-1 text-xs font-bold uppercase tracking-[0.12em] text-accent-soft">
+                      Resilium
+                    </span>
+                    <p className="mt-3 text-sm font-semibold leading-6 text-text-primary">K tomu přidáváme</p>
                   </div>
                 </div>
-                {trainingComparison.map((item) => (
-                  <div key={item.common} className="grid grid-cols-2 border-b border-border/25 last:border-b-0">
-                    <div className="border-r border-border/25 px-6 py-4 text-sm leading-6 text-text-muted">{item.common}</div>
-                    <div className="px-6 py-4 text-sm font-semibold leading-6 text-text-primary">{item.resilium}</div>
+                {trainingComparison.map((item, index) => (
+                  <div key={item.common} className="grid grid-cols-[0.9fr_1.1fr] border-b border-border/25 last:border-b-0">
+                    <div className="border-r border-border/25 px-6 py-5 text-sm leading-6 text-text-muted">
+                      <span className="mr-3 font-bold text-text-secondary">{String(index + 1).padStart(2, "0")}</span>
+                      {item.common}
+                    </div>
+                    <div className="px-6 py-5 text-sm font-semibold leading-6 text-text-primary">
+                      <span className="mr-3 inline-block h-2 w-2 rounded-full bg-accent" />
+                      {item.resilium}
+                    </div>
                   </div>
                 ))}
               </div>
 
               <div className="grid gap-3 p-4 md:hidden">
-                {trainingComparison.map((item) => (
+                {trainingComparison.map((item, index) => (
                   <article key={item.common} className="rounded-2xl border border-border/30 bg-panel-dark/42 p-4">
-                    <p className="text-xs font-bold uppercase tracking-[0.14em] text-text-secondary">Běžné školení</p>
+                    <div className="flex items-center justify-between gap-3">
+                      <p className="text-xs font-bold uppercase tracking-[0.14em] text-text-secondary">Běžné školení</p>
+                      <span className="text-xs font-bold text-text-secondary">{String(index + 1).padStart(2, "0")}</span>
+                    </div>
                     <p className="mt-2 text-sm leading-6 text-text-muted">{item.common}</p>
                     <div className="my-4 h-px bg-border/30" />
                     <p className="text-xs font-bold uppercase tracking-[0.14em] text-accent-soft">Resilium</p>
@@ -271,14 +290,6 @@ export default function Home() {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                  {trustProofs.map((proof) => (
-                    <article key={proof.title} className="rounded-2xl border border-border/35 bg-panel-dark/58 p-5">
-                      <h3 className="font-heading text-lg font-bold text-white">{proof.title}</h3>
-                      <p className="mt-3 text-sm leading-6 text-text-muted">{proof.text}</p>
-                    </article>
-                  ))}
-                </div>
               </div>
               <div className="dark-card overflow-hidden">
                 <div className="relative aspect-square">
@@ -289,18 +300,39 @@ export default function Home() {
                     sizes="(min-width: 1024px) 45vw, 100vw"
                     className="object-cover object-center"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-dark/78 via-dark/12 to-transparent" />
-                  <div className="absolute inset-x-5 bottom-5 rounded-[1.25rem] border border-white/20 bg-panel-dark/82 p-5 backdrop-blur sm:inset-x-7 sm:bottom-7">
-                    <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent-soft">Mgr. Radim Končítek</p>
-                    <p className="mt-2 text-base font-bold leading-6 text-white">autor metodiky a hlavní lektor systému Resilium</p>
-                  </div>
                 </div>
+                <div className="border-t border-border/35 bg-panel-dark/78 p-5 sm:p-6">
+                  <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent-soft">Mgr. Radim Končítek</p>
+                  <p className="mt-2 text-base font-bold leading-6 text-white">autor metodiky a hlavní lektor systému Resilium</p>
+                </div>
+              </div>
+            </div>
+            <div className="mt-10 rounded-[1.5rem] border border-border/45 bg-panel-dark/56 p-5 shadow-panel sm:p-6">
+              <p className="font-heading text-2xl font-bold leading-tight text-white">Proč si vybrat právě nás?</p>
+              <div className="mt-5 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+                {trustProofs.map((proof, index) => (
+                  <article
+                    key={proof.title}
+                    className="min-w-0 rounded-[1.1rem] border border-accent/30 bg-bg/48 p-5 shadow-[0_18px_36px_rgba(37,46,53,0.18)]"
+                  >
+                    <div className="flex items-start gap-3">
+                      <span className="flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-accent text-xs font-bold text-white">
+                        {index + 1}
+                      </span>
+                      <div className="min-w-0">
+                        <h3 className="font-heading text-lg font-bold leading-tight text-white">{proof.title}</h3>
+                        <p className="mt-3 text-sm leading-6 text-text-muted">{proof.text}</p>
+                      </div>
+                    </div>
+                  </article>
+                ))}
               </div>
             </div>
           </div>
         </section>
 
         <ContactSection
+          title="Nezávazně poptat vhodný program"
           text="Napište nám. Pomůžeme určit, zda dává smysl program pro jednotlivce, pro lídry nebo pro organizaci."
         />
       </main>

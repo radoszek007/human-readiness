@@ -34,30 +34,30 @@ export default function PersonalPerformancePage() {
     <>
       <Header />
       <main className="bg-section-light">
-        <section className="relative overflow-hidden bg-bg pt-36 text-white sm:pt-40 lg:pt-44">
+        <section className="relative overflow-x-clip bg-bg pt-28 text-white sm:pt-40 lg:pt-44">
           <div className="absolute inset-0 opacity-40 [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:72px_72px]" />
           <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-section-light to-transparent" />
-          <div className="section-shell relative pb-20 sm:pb-24 lg:pb-28">
+          <div className="section-shell relative min-w-0 pb-14 sm:pb-24 lg:pb-28">
             <p className="eyebrow mb-5">Resilium Personal Performance</p>
-            <h1 className="max-w-5xl font-heading text-4xl font-bold leading-[1.04] text-white sm:text-6xl lg:text-7xl">
+            <h1 className="max-w-[21.5rem] font-heading text-[2rem] font-bold leading-[1.08] text-white sm:max-w-5xl sm:text-6xl sm:leading-[1.04] lg:text-7xl">
               Zvládněte tlak. Jednejte jistěji. Žijte klidněji.
             </h1>
-            <p className="mt-6 max-w-4xl text-lg leading-8 text-text-muted sm:text-xl">
+            <p className="mt-5 max-w-[21.5rem] text-base leading-7 text-text-muted sm:mt-6 sm:max-w-4xl sm:text-xl sm:leading-8">
               Resilium Personal Performance je praktický trénink pro jednotlivce, kteří chtějí lépe pracovat se stresem, hranicemi,
               rozhodováním a vlastní reakcí v náročných situacích.
             </p>
-            <p className="mt-5 max-w-3xl rounded-2xl border border-border/45 bg-panel-dark/55 px-4 py-3 text-sm font-semibold leading-6 text-text-primary sm:text-base">
+            <p className="mt-5 max-w-[21.5rem] rounded-2xl border border-border/45 bg-panel-dark/55 px-4 py-3 text-sm font-semibold leading-6 text-text-primary sm:max-w-3xl sm:text-base">
               Výstupem je jednoduchý osobní postup pro první sekundy tlaku, jasnější hranice a návrat do klidu.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link href="#contact" className="cta-primary">
+            <div className="mt-8 flex max-w-[21.5rem] flex-col gap-3 sm:max-w-none sm:flex-row">
+              <Link href="#contact" className="cta-primary w-full sm:w-fit">
                 Domluvit nezávaznou konzultaci
               </Link>
-              <Link href="#trenink" className="cta-secondary">
+              <Link href="#trenink" className="cta-secondary w-full sm:w-fit">
                 Jak trénink funguje
               </Link>
             </div>
-            <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            <div className="mt-8 grid max-w-[21.5rem] gap-3 sm:max-w-none sm:grid-cols-2 lg:grid-cols-4">
               {heroParams.map((param) => (
                 <div key={param} className="rounded-2xl border border-border/40 bg-panel-dark/62 px-4 py-3 text-sm font-bold text-text-primary">
                   {param}

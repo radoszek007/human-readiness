@@ -6,17 +6,18 @@ export default function FounderSection() {
     <section className="bg-section-light py-20 sm:py-24">
       <div className="section-shell">
         <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
-          <div className="relative min-h-[30rem] overflow-hidden rounded-[1.5rem] border border-slate-200 bg-gradient-to-br from-bg to-bg-secondary shadow-soft">
-            <Image
-              src="/Instructor.png"
-              alt="Mgr. Radim Končítek, autor metodiky a hlavní lektor systému Resilium"
-              fill
-              sizes="(min-width: 1024px) 42vw, 100vw"
-              className="object-cover object-center"
-              priority={false}
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-dark/70 via-dark/8 to-transparent" />
-            <div className="absolute inset-x-5 bottom-5 rounded-[1.25rem] border border-white/20 bg-panel-dark/78 p-5 text-white backdrop-blur sm:inset-x-8 sm:bottom-8">
+          <div className="overflow-hidden rounded-[1.5rem] border border-slate-200 bg-white shadow-soft">
+            <div className="relative min-h-[30rem] bg-gradient-to-br from-bg to-bg-secondary">
+              <Image
+                src="/Instructor.png"
+                alt="Mgr. Radim Končítek, autor metodiky a hlavní lektor systému Resilium"
+                fill
+                sizes="(min-width: 1024px) 42vw, 100vw"
+                className="object-cover object-center"
+                priority={false}
+              />
+            </div>
+            <div className="border-t border-slate-200 bg-bg p-5 text-white sm:p-6">
               <p className="text-sm font-bold uppercase tracking-[0.18em] text-accent-soft">Mgr. Radim Končítek</p>
               <p className="mt-2 text-base font-bold leading-6 text-white">autor metodiky a hlavní lektor systému</p>
             </div>

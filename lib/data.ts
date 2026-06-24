@@ -38,7 +38,7 @@ export const brandPaths = [
     situation: "Náročný rozhovor, tlak na výkon, konflikt, únava nebo ztráta hranic.",
     outcome: "Jasnější postup, klidnější komunikace a větší jistota v prvních sekundách tlaku.",
     points: ["osobní stabilita", "hranice a komunikace", "rozhodování v zátěži", "návrat do klidu"],
-    cta: "Nezávazně poptat osobní trénink",
+    cta: "Nezávazně poptat",
     contactHref: "/?program=personal#contact",
     detailHref: "/personal-performance"
   },
@@ -51,7 +51,7 @@ export const brandPaths = [
     situation: "Krizové rozhodnutí, konflikt s klíčovým člověkem nebo jednání pod tlakem.",
     outcome: "Osobní protokoly pro klidnější hlas, jasné hranice a rozhodnější vedení.",
     points: ["osobní protokoly", "krizová komunikace", "autorita bez agrese", "rozhodování pod tlakem"],
-    cta: "Nezávazně konzultovat pro lídry",
+    cta: "Nezávazně konzultovat",
     contactHref: "/?program=executive#contact",
     detailHref: "/executive"
   },
@@ -64,7 +64,7 @@ export const brandPaths = [
     situation: "Konfliktní klient, tlak na front-office, eskalace v týmu nebo rizikový provoz.",
     outcome: "Společný jazyk, role, signály a praktičtější reakce v náročných situacích.",
     points: ["jistější zaměstnanci", "méně chaosu v eskalaci", "týmová koordinace", "scénáře z praxe"],
-    cta: "Nezávazně poptat program pro organizaci",
+    cta: "Nezávazně poptat",
     contactHref: "/?program=organizations#contact",
     detailHref: "/organizations"
   }

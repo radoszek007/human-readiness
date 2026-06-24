@@ -40,6 +40,10 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+main {
+  overflow-x: clip;
+}
+
 h1,
 h2,
 h3,
@@ -109,18 +113,18 @@ a {
   }
 
   .dark-card {
-    @apply rounded-[1.25rem] border border-border/40 bg-panel-dark/70 shadow-panel backdrop-blur;
+    @apply min-w-0 rounded-[1.25rem] border border-border/40 bg-panel-dark/70 shadow-panel backdrop-blur;
   }
 
   .light-card {
-    @apply rounded-[1.25rem] border border-slate-200/80 bg-white/80 shadow-soft;
+    @apply min-w-0 rounded-[1.25rem] border border-slate-200/80 bg-white/80 shadow-soft;
   }
 
   .cta-primary {
-    @apply inline-flex min-h-12 max-w-full items-center justify-center whitespace-normal rounded-full bg-accent px-6 py-3 text-center text-sm font-bold text-white shadow-[0_14px_32px_rgba(244,133,44,0.26)] transition hover:-translate-y-0.5 hover:bg-accent-warm focus:outline-none focus:ring-4 focus:ring-accent/30;
+    @apply inline-flex min-h-12 min-w-0 max-w-full items-center justify-center whitespace-normal break-words rounded-full bg-accent px-6 py-3 text-center text-sm font-bold text-white shadow-[0_14px_32px_rgba(244,133,44,0.26)] transition hover:-translate-y-0.5 hover:bg-accent-warm focus:outline-none focus:ring-4 focus:ring-accent/30;
   }
 
   .cta-secondary {
-    @apply inline-flex min-h-12 max-w-full items-center justify-center whitespace-normal rounded-full border border-border/60 bg-white/10 px-6 py-3 text-center text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-accent-soft hover:bg-white/20 focus:outline-none focus:ring-4 focus:ring-accent/20;
+    @apply inline-flex min-h-12 min-w-0 max-w-full items-center justify-center whitespace-normal break-words rounded-full border border-border/60 bg-white/10 px-6 py-3 text-center text-sm font-bold text-white transition hover:-translate-y-0.5 hover:border-accent-soft hover:bg-white/20 focus:outline-none focus:ring-4 focus:ring-accent/20;
   }
 }

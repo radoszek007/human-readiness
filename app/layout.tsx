@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Montserrat } from "next/font/google";
 import { Suspense } from "react";
 import AnalyticsTracker from "@/components/AnalyticsTracker";
@@ -27,6 +27,11 @@ export const metadata: Metadata = {
     type: "website",
     locale: "cs_CZ"
   }
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1
 };
 
 export default function RootLayout({

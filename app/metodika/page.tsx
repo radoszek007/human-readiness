@@ -17,23 +17,23 @@ export default function MethodPage() {
     <>
       <Header />
       <main className="bg-section-light">
-        <section className="relative overflow-hidden bg-bg pt-36 text-white sm:pt-40 lg:pt-44">
+        <section className="relative overflow-x-clip bg-bg pt-28 text-white sm:pt-40 lg:pt-44">
           <div className="absolute inset-0 opacity-40 [background-image:linear-gradient(rgba(255,255,255,0.08)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.08)_1px,transparent_1px)] [background-size:72px_72px]" />
           <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-section-light to-transparent" />
-          <div className="section-shell relative pb-20 sm:pb-24 lg:pb-28">
+          <div className="section-shell relative min-w-0 pb-14 sm:pb-24 lg:pb-28">
             <p className="eyebrow mb-5">Metodika Resilium</p>
-            <h1 className="max-w-5xl font-heading text-4xl font-bold leading-[1.04] text-white sm:text-6xl lg:text-7xl">
+            <h1 className="max-w-[21.5rem] font-heading text-[2rem] font-bold leading-[1.08] text-white sm:max-w-5xl sm:text-6xl sm:leading-[1.04] lg:text-7xl">
               Tělo. Pozornost. Rozhodnutí. Akce.
             </h1>
-            <p className="mt-6 max-w-4xl text-lg leading-8 text-text-muted sm:text-xl">
+            <p className="mt-5 max-w-[21.5rem] text-base leading-7 text-text-muted sm:mt-6 sm:max-w-4xl sm:text-xl sm:leading-8">
               Resilium pracuje s celou reakcí člověka. Tlak ovlivňuje tělo, pozornost, hlas, komunikaci, prostor i rozhodování.
               Proto trénink propojuje mentální, komunikační a fyzickou připravenost.
             </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <Link href="/#paths" className="cta-primary">
+            <div className="mt-8 flex max-w-[21.5rem] flex-col gap-3 sm:max-w-none sm:flex-row">
+              <Link href="/#paths" className="cta-primary w-full sm:w-fit">
                 Vybrat vhodný program
               </Link>
-              <Link href="#core" className="cta-secondary">
+              <Link href="#core" className="cta-secondary w-full sm:w-fit">
                 C.O.R.E.
               </Link>
             </div>
